@@ -1,0 +1,45 @@
+name: refresh-briefing
+
+on:
+  schedule:
+    - cron: "0 10 * * *"
+    - cron: "0 11 * * *"
+    - cron: "0 17 * * *"
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Skip the timezone check and generate now"
+        required: false
+        default: "true"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate briefing
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SKIP_TZ_CHECK: ${{ github.event_name == 'workflow_dispatch' && inputs.force == 'true' && '1' || '' }}
+        run: node scripts/generate.mjs
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "briefing-bot"
+          git config user.email "briefing-bot@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain public/briefing.json)" ]]; then
+            git add public/briefing.json
+            git commit -m "chore: refresh briefing $(date -u +%FT%TZ)"
+            git push
+          else
+            echo "No changes to commit (likely skipped on TZ gate)."
+          fi
