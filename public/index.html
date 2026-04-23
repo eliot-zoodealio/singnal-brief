@@ -175,6 +175,80 @@
   .bullish .signal-bar { background: var(--accent-green); }
   .bearish .signal-bar { background: var(--accent-red); }
   .neutral .signal-bar { background: var(--accent-yellow); }
+  /* Fear & Greed gauges */
+  .fg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+  }
+  .fg-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 20px 24px;
+  }
+  .fg-title {
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .fg-row {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .fg-value {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: 2px;
+  }
+  .fg-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  .fg-bar {
+    position: relative;
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(to right,
+      #cc1f1a 0%, #ff3355 22%, #ffd700 45%, #ffd700 55%, #00ff88 78%, #00cc66 100%);
+    margin-bottom: 8px;
+  }
+  .fg-marker {
+    position: absolute;
+    top: -6px;
+    width: 2px;
+    height: 20px;
+    background: var(--text);
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);
+    transform: translateX(-50%);
+  }
+  .fg-scale {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 2px;
+    margin-top: 4px;
+  }
+  .fg-meta {
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .fg-label.extreme-fear { color: #cc1f1a; }
+  .fg-label.fear { color: var(--accent-red); }
+  .fg-label.neutral { color: var(--accent-yellow); }
+  .fg-label.greed { color: var(--accent-green); }
+  .fg-label.extreme-greed { color: #00cc66; }
+
   .verdict-box {
     margin-top: 28px; padding: 24px;
     border: 1px solid var(--border); background: var(--surface);
@@ -243,6 +317,11 @@
       <div class="section-line"></div>
     </div>
     <div class="briefing-content" id="briefingText"></div>
+    <div class="section-header mt" id="fgHeader" style="display:none">
+      <div class="section-label">Market Sentiment · Fear &amp; Greed</div>
+      <div class="section-line"></div>
+    </div>
+    <div class="fg-grid" id="fgGrid"></div>
     <div class="section-header mt" id="signalsHeader" style="display:none">
       <div class="section-label">Market Signals</div>
       <div class="section-line"></div>
@@ -292,8 +371,51 @@
     }).join('');
   }
 
+  function renderFearGreed(fg) {
+    if (!fg || (!fg.stocks && !fg.crypto)) return;
+    document.getElementById('fgHeader').style.display = 'flex';
+    const grid = document.getElementById('fgGrid');
+    grid.innerHTML = '';
+    if (fg.stocks) grid.appendChild(fgCard('Stocks · CNN', fg.stocks));
+    if (fg.crypto) grid.appendChild(fgCard('Crypto · Alternative.me', fg.crypto));
+  }
+
+  function fgCard(title, d) {
+    const v = Math.max(0, Math.min(100, Number(d.value) || 0));
+    const regime = regimeFor(v);
+    const card = document.createElement('div');
+    card.className = 'fg-card';
+    let meta = '';
+    if (d.previous_close != null) {
+      const delta = v - d.previous_close;
+      const arrow = delta >= 0 ? '▲' : '▼';
+      const klass = delta >= 0 ? 'up' : 'down';
+      meta = `<div class="fg-meta">Prev close: ${d.previous_close} <span class="${klass}">${arrow} ${Math.abs(delta)}</span></div>`;
+    }
+    card.innerHTML = `
+      <div class="fg-title">${escapeHtml(title)}</div>
+      <div class="fg-row">
+        <div class="fg-value">${v}</div>
+        <div class="fg-label ${regime}">${escapeHtml(d.label || '')}</div>
+      </div>
+      <div class="fg-bar"><div class="fg-marker" style="left:${v}%"></div></div>
+      <div class="fg-scale"><span>0 FEAR</span><span>50</span><span>GREED 100</span></div>
+      ${meta}
+    `;
+    return card;
+  }
+
+  function regimeFor(v) {
+    if (v < 25) return 'extreme-fear';
+    if (v < 45) return 'fear';
+    if (v < 55) return 'neutral';
+    if (v < 75) return 'greed';
+    return 'extreme-greed';
+  }
+
   function renderBriefing(b) {
     document.getElementById('briefingText').textContent = b.summary || '';
+    renderFearGreed(b.fear_greed);
     const grid = document.getElementById('signalsGrid');
     grid.innerHTML = '';
     if (Array.isArray(b.signals) && b.signals.length) {
