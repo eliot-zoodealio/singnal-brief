@@ -1,10 +1,84 @@
 {
-  "summary": "Waiting for the first scheduled briefing run. Once the GitHub Actions workflow fires at 6:00 AM or 1:00 PM Eastern, this file will be overwritten with a fresh market briefing pulled from live web search. You can also trigger it manually from the Actions tab (refresh-briefing -> Run workflow).",
-  "signals": [],
-  "tickers": [],
-  "verdict": "Briefing pending — first cron run hasn't occurred yet.",
-  "sentiment": "mixed",
-  "sources": [],
-  "generated_at": null,
-  "model": null
+  "summary": "Markets surged to fresh records Wednesday as President Trump indefinitely extended the Iran ceasefire, removing a major geopolitical overhang and igniting a powerful risk-on rally. The Nasdaq Composite jumped 1.6% to a new all-time high, led by semiconductor stocks on their 16th consecutive day of gains—the longest winning streak ever. The S&P 500 added nearly 1% to notch its own record close while the Dow climbed 0.6%. Bitcoin rallied above $78,000 and Ethereum pushed toward $2,400 as crypto markets tracked the relief trade. Tesla beat earnings estimates after the bell, lifting shares 3% in extended trading. Today's focus shifts to a heavy slate of earnings reports including Intel, American Express, Honeywell, and Comcast, as investors assess whether the peace-driven rally has legs ahead of next week's FOMC meeting on April 29.",
+  "signals": [
+    {
+      "type": "bullish",
+      "title": "Trump extends Iran ceasefire indefinitely, stocks hit all-time highs",
+      "desc": "President Trump's extension of the ceasefire with Iran removed geopolitical risk premium, sending the S&P 500 and Nasdaq to fresh records and triggering broad risk-on sentiment across equities and crypto.",
+      "asset": "stocks"
+    },
+    {
+      "type": "bullish",
+      "title": "Semiconductors extend historic 16-day winning streak",
+      "desc": "Chipmakers rallied for a 16th consecutive session—the longest-ever winning streak—fueled by data-center AI demand and ceasefire optimism, with the group outperforming all other sectors.",
+      "asset": "stocks"
+    },
+    {
+      "type": "bullish",
+      "title": "Tesla beats Q1 earnings, stock jumps 3% after hours",
+      "desc": "Tesla reported Q1 revenue of $22.39B vs. $22.08B consensus and EPS of $0.41 vs. $0.35 expected, sending shares up 3% in after-hours trading and signaling resilience despite production headwinds.",
+      "asset": "stocks"
+    },
+    {
+      "type": "bullish",
+      "title": "Bitcoin tests $78K as short-squeeze risks mount",
+      "desc": "Bitcoin rallied above $78,000 following the ceasefire extension and strong ETF inflows, with $180M in short liquidations at stake and momentum building for a breakout above key on-chain resistance levels.",
+      "asset": "crypto"
+    },
+    {
+      "type": "neutral",
+      "title": "Fed expected to hold rates at April 29 meeting",
+      "desc": "Markets price in 99.4% probability the Fed keeps rates at 3.5%-3.75% next week as policymakers balance elevated inflation from the Iran conflict against a softening labor market, with one cut still penciled in for later in 2026.",
+      "asset": "macro"
+    }
+  ],
+  "tickers": [
+    {
+      "symbol": "SPY",
+      "price": "713.79",
+      "change_pct": "+1.05"
+    },
+    {
+      "symbol": "QQQ",
+      "price": "648.85",
+      "change_pct": "+1.64"
+    },
+    {
+      "symbol": "BTC",
+      "price": "78304",
+      "change_pct": "+2.60"
+    },
+    {
+      "symbol": "ETH",
+      "price": "2393",
+      "change_pct": "+3.30"
+    },
+    {
+      "symbol": "GOLD",
+      "price": "4755",
+      "change_pct": "-0.57"
+    },
+    {
+      "symbol": "OIL",
+      "price": "89.29",
+      "change_pct": "-1.20"
+    },
+    {
+      "symbol": "DXY",
+      "price": "100.50",
+      "change_pct": "+0.15"
+    }
+  ],
+  "verdict": "Risk appetite is roaring back on Middle East peace hopes, but heavy earnings and next week's Fed meeting will test whether this rally can hold at fresh all-time highs.",
+  "sentiment": "bullish",
+  "sources": [
+    "https://finance.yahoo.com/markets/stocks/live/stock-market-today-wednesday-april-22-dow-sp-500-nasdaq-trump-us-iran-ceasefire-230429476.html",
+    "https://www.bloomberg.com/news/articles/2026-04-21/stock-market-today-dow-s-p-live-updates",
+    "https://www.cnbc.com/2026/04/21/stock-market-today-live-updates.html",
+    "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-april-22-2026-prices-rising-following-ceasefire-extension-114636596.html",
+    "https://www.coindesk.com/markets/2026/04/22/bitcoin-faces-make-or-break-moment-at-two-major-on-chain-resistance-levels",
+    "https://www.tradestation.com/insights/2026/04/22/big-tech-earnings-april-2026/"
+  ],
+  "generated_at": "2026-04-23T05:44:54.627Z",
+  "model": "claude-sonnet-4-5-20250929"
 }
