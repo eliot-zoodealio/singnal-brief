@@ -1,35 +1,35 @@
 {
-  "summary": "Markets surged to fresh records Wednesday as President Trump indefinitely extended the Iran ceasefire, removing a major geopolitical overhang and igniting a powerful risk-on rally. The Nasdaq Composite jumped 1.6% to a new all-time high, led by semiconductor stocks on their 16th consecutive day of gains—the longest winning streak ever. The S&P 500 added nearly 1% to notch its own record close while the Dow climbed 0.6%. Bitcoin rallied above $78,000 and Ethereum pushed toward $2,400 as crypto markets tracked the relief trade. Tesla beat earnings estimates after the bell, lifting shares 3% in extended trading. Today's focus shifts to a heavy slate of earnings reports including Intel, American Express, Honeywell, and Comcast, as investors assess whether the peace-driven rally has legs ahead of next week's FOMC meeting on April 29.",
+  "summary": "Markets surged to fresh all-time highs on Wednesday as President Trump extended the Iran ceasefire indefinitely, relieving geopolitical pressure that had weighed on risk assets. The S&P 500 gained nearly 1% to a new record while the Nasdaq Composite jumped 1.6% to its own all-time high, with semiconductor stocks notching their 16th consecutive session of gains—the longest winning streak ever. Tesla reported better-than-expected Q1 earnings after the bell, beating on EPS despite a revenue miss, as the company expanded its Robotaxi service to Dallas and Houston. Bitcoin rallied above $78,000 following the ceasefire extension and a massive $2.54 billion purchase by MicroStrategy, while Ethereum climbed past $2,390. Looking ahead, investors are laser-focused on next week's FOMC decision on April 29 and mega-cap tech earnings from Microsoft, Amazon, Alphabet, and Meta, which report after that same close. With oil still elevated near $100, Q1 GDP and PCE inflation data due April 30, and Fed Chair Kevin Warsh's confirmation hearing revealing political tensions over the Powell investigation, markets face a critical test of whether tech can justify its premium valuations and the Fed can maintain its hawkish stance.",
   "signals": [
     {
       "type": "bullish",
-      "title": "Trump extends Iran ceasefire indefinitely, stocks hit all-time highs",
-      "desc": "President Trump's extension of the ceasefire with Iran removed geopolitical risk premium, sending the S&P 500 and Nasdaq to fresh records and triggering broad risk-on sentiment across equities and crypto.",
+      "title": "Trump Extends Iran Ceasefire Indefinitely",
+      "desc": "President Trump's announcement of indefinite ceasefire extension removed geopolitical overhang, triggering risk-on rallies across equities and crypto with S&P 500 and Nasdaq hitting fresh records.",
       "asset": "stocks"
     },
     {
       "type": "bullish",
-      "title": "Semiconductors extend historic 16-day winning streak",
-      "desc": "Chipmakers rallied for a 16th consecutive session—the longest-ever winning streak—fueled by data-center AI demand and ceasefire optimism, with the group outperforming all other sectors.",
+      "title": "Semiconductors Hit 16-Day Win Streak Record",
+      "desc": "Chipmakers extended their winning streak to 16 consecutive sessions—the longest ever—as AI infrastructure demand remains robust ahead of mega-cap tech earnings next week.",
       "asset": "stocks"
     },
     {
       "type": "bullish",
-      "title": "Tesla beats Q1 earnings, stock jumps 3% after hours",
-      "desc": "Tesla reported Q1 revenue of $22.39B vs. $22.08B consensus and EPS of $0.41 vs. $0.35 expected, sending shares up 3% in after-hours trading and signaling resilience despite production headwinds.",
-      "asset": "stocks"
-    },
-    {
-      "type": "bullish",
-      "title": "Bitcoin tests $78K as short-squeeze risks mount",
-      "desc": "Bitcoin rallied above $78,000 following the ceasefire extension and strong ETF inflows, with $180M in short liquidations at stake and momentum building for a breakout above key on-chain resistance levels.",
+      "title": "Bitcoin Surges Past $78K on MicroStrategy Buy",
+      "desc": "Bitcoin rallied to $78,300 after MicroStrategy disclosed a $2.54 billion BTC purchase (absorbing 3x April miner supply) and ceasefire extension boosted risk appetite, testing key $79-80K resistance.",
       "asset": "crypto"
     },
     {
       "type": "neutral",
-      "title": "Fed expected to hold rates at April 29 meeting",
-      "desc": "Markets price in 99.4% probability the Fed keeps rates at 3.5%-3.75% next week as policymakers balance elevated inflation from the Iran conflict against a softening labor market, with one cut still penciled in for later in 2026.",
+      "title": "FOMC Meeting April 29 with No Dot Plot",
+      "desc": "Fed holds rates at 3.50-3.75% as expected, but with no SEP projections, Powell's language on inflation vs. growth trade-off will carry outsized weight for rate cut timing into H2 2026.",
       "asset": "macro"
+    },
+    {
+      "type": "mixed",
+      "title": "Tesla Beats EPS but Robotaxi Revenue Uncertainty Looms",
+      "desc": "Tesla reported Q1 EPS of $0.41 vs. $0.35 expected and expanded Robotaxi to Dallas/Houston, but revenue missed at $22.39B and concerns over multi-trillion dollar chipmaking capex persist.",
+      "asset": "stocks"
     }
   ],
   "tickers": [
@@ -40,45 +40,59 @@
     },
     {
       "symbol": "QQQ",
-      "price": "648.85",
+      "price": "648.41",
       "change_pct": "+1.64"
     },
     {
       "symbol": "BTC",
       "price": "78304",
-      "change_pct": "+2.60"
+      "change_pct": "+2.57"
     },
     {
       "symbol": "ETH",
       "price": "2393",
-      "change_pct": "+3.30"
+      "change_pct": "+2.84"
     },
     {
       "symbol": "GOLD",
-      "price": "4755",
-      "change_pct": "-0.57"
+      "price": "3315",
+      "change_pct": "-0.22"
     },
     {
       "symbol": "OIL",
-      "price": "89.29",
-      "change_pct": "-1.20"
+      "price": "99.20",
+      "change_pct": "+0.35"
     },
     {
       "symbol": "DXY",
-      "price": "100.50",
-      "change_pct": "+0.15"
+      "price": "99.85",
+      "change_pct": "+0.12"
     }
   ],
-  "verdict": "Risk appetite is roaring back on Middle East peace hopes, but heavy earnings and next week's Fed meeting will test whether this rally can hold at fresh all-time highs.",
+  "verdict": "Risk-on momentum is strong but faces major tests next week with FOMC, mega-cap earnings, and key macro data—hold above support or face sharp reversal.",
   "sentiment": "bullish",
   "sources": [
-    "https://finance.yahoo.com/markets/stocks/live/stock-market-today-wednesday-april-22-dow-sp-500-nasdaq-trump-us-iran-ceasefire-230429476.html",
     "https://www.bloomberg.com/news/articles/2026-04-21/stock-market-today-dow-s-p-live-updates",
-    "https://www.cnbc.com/2026/04/21/stock-market-today-live-updates.html",
-    "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-april-22-2026-prices-rising-following-ceasefire-extension-114636596.html",
+    "https://finance.yahoo.com/markets/stocks/live/stock-market-today-wednesday-april-22-dow-sp-500-nasdaq-trump-us-iran-ceasefire-230429476.html",
     "https://www.coindesk.com/markets/2026/04/22/bitcoin-faces-make-or-break-moment-at-two-major-on-chain-resistance-levels",
-    "https://www.tradestation.com/insights/2026/04/22/big-tech-earnings-april-2026/"
+    "https://blog.kraken.com/economic-brief/april-22-2026",
+    "https://www.cnbc.com/2026/04/21/kevin-warsh-fed-confirmation-hearing-trump-live-updates.html",
+    "https://www.tradestation.com/insights/2026/04/22/big-tech-earnings-april-2026/",
+    "https://finance.yahoo.com/markets/stocks/article/tesla-q1-earnings-preview-robotaxi-rollout-mega-capex-spending-in-focus-135049863.html"
   ],
-  "generated_at": "2026-04-23T05:44:54.627Z",
+  "fear_greed": {
+    "stocks": {
+      "value": 68,
+      "label": "Greed",
+      "previous_close": 68,
+      "updated": "2026-04-23T00:00:00+00:00"
+    },
+    "crypto": {
+      "value": 46,
+      "label": "Fear",
+      "updated": "2026-04-23T00:00:00.000Z"
+    }
+  },
+  "generated_at": "2026-04-23T06:43:05.696Z",
   "model": "claude-sonnet-4-5-20250929"
 }
