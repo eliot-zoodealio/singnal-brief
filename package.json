@@ -1,0 +1,13 @@
+{
+  "name": "market-briefing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "generate:force": "SKIP_TZ_CHECK=1 node scripts/generate.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

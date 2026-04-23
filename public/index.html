@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal Brief — Market Intelligence</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@300;400;600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+  :root {
+    --bg: #0a0a0f;
+    --surface: #111118;
+    --border: #1e1e2e;
+    --accent-green: #00ff88;
+    --accent-red: #ff3355;
+    --accent-yellow: #ffd700;
+    --accent-blue: #00aaff;
+    --text: #e0e0e8;
+    --muted: #555570;
+    --ticker-h: 36px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Mono', monospace;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .ticker-bar {
+    background: #0d0d15;
+    border-bottom: 1px solid var(--border);
+    height: var(--ticker-h);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .ticker-label {
+    background: var(--accent-green);
+    color: #000;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0 12px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .ticker-scroll {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    white-space: nowrap;
+  }
+  .ticker-item { font-size: 11px; padding: 0 24px; color: var(--muted); }
+  .ticker-item .sym { color: var(--text); margin-right: 6px; font-weight: 600; }
+  .up { color: var(--accent-green) !important; }
+  .down { color: var(--accent-red) !important; }
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  header {
+    padding: 32px 40px 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+  }
+  .brand { display: flex; flex-direction: column; }
+  .brand-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 52px;
+    letter-spacing: 4px;
+    line-height: 1;
+    background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .brand-sub {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .date-stamp { text-align: right; font-size: 11px; color: var(--muted); line-height: 1.8; }
+  .date-stamp .generated { color: var(--text); font-size: 12px; }
+  .date-stamp .live {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: var(--accent-green); font-size: 10px; letter-spacing: 2px;
+  }
+  .live-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent-green);
+    animation: pulse 1.5s ease infinite;
+  }
+  @keyframes pulse {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.8); }
+  }
+  main { padding: 32px 40px; }
+  .loading-screen {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-height: 300px; gap: 20px;
+  }
+  .loading-text { font-size: 11px; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; }
+  .loading-bar { width: 300px; height: 2px; background: var(--border); position: relative; overflow: hidden; }
+  .loading-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-green), var(--accent-blue));
+    animation: loadfill 1.4s ease-in-out infinite;
+    border-radius: 2px;
+  }
+  @keyframes loadfill {
+    0% { width: 0%; margin-left: 0%; }
+    50% { width: 60%; margin-left: 20%; }
+    100% { width: 0%; margin-left: 100%; }
+  }
+  .briefing { display: none; animation: fadeIn 0.5s ease forwards; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .section-header { display: flex; align-items: center; gap: 12px; margin: 0 0 20px; }
+  .section-header.mt { margin-top: 32px; }
+  .section-label { font-size: 9px; letter-spacing: 4px; color: var(--muted); text-transform: uppercase; }
+  .section-line { flex: 1; height: 1px; background: var(--border); }
+  .briefing-content {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent-green);
+    padding: 28px 32px;
+    line-height: 1.9;
+    font-size: 13px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    white-space: pre-wrap;
+    position: relative;
+  }
+  .briefing-content::before {
+    content: 'BRIEFING';
+    position: absolute;
+    top: -1px; right: 20px;
+    background: var(--accent-green);
+    color: #000;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8px; letter-spacing: 3px; padding: 3px 10px; font-weight: 600;
+  }
+  .signals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
+  .signal-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .signal-card:hover { border-color: var(--muted); }
+  .signal-type { font-size: 8px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; }
+  .signal-type.bullish { color: var(--accent-green); }
+  .signal-type.bearish { color: var(--accent-red); }
+  .signal-type.neutral { color: var(--accent-yellow); }
+  .signal-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px; font-weight: 600; margin-bottom: 8px; line-height: 1.4;
+  }
+  .signal-desc {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 11px; font-weight: 300; color: #9090aa; line-height: 1.6;
+  }
+  .signal-bar { position: absolute; left: 0; top: 0; bottom: 0; width: 3px; }
+  .bullish .signal-bar { background: var(--accent-green); }
+  .bearish .signal-bar { background: var(--accent-red); }
+  .neutral .signal-bar { background: var(--accent-yellow); }
+  .verdict-box {
+    margin-top: 28px; padding: 24px;
+    border: 1px solid var(--border); background: var(--surface);
+    display: flex; align-items: center; gap: 24px;
+  }
+  .verdict-label {
+    font-size: 9px; letter-spacing: 4px;
+    color: var(--muted); text-transform: uppercase; white-space: nowrap;
+  }
+  .verdict-text { font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600; }
+  .verdict-icon { font-size: 28px; flex-shrink: 0; }
+  .sources {
+    margin-top: 28px; padding: 20px 24px;
+    border: 1px solid var(--border); background: var(--surface);
+  }
+  .sources a {
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; color: var(--accent-blue);
+    padding: 4px 0;
+    text-decoration: none;
+    word-break: break-all;
+  }
+  .sources a:hover { text-decoration: underline; }
+  .disclaimer {
+    margin-top: 40px; padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 9px; letter-spacing: 1px; color: var(--muted);
+    line-height: 2; text-align: center;
+  }
+  .error-box {
+    background: rgba(255,51,85,0.05);
+    border: 1px solid rgba(255,51,85,0.2);
+    padding: 24px; color: var(--accent-red);
+    font-size: 12px; display: none;
+  }
+</style>
+</head>
+<body>
+<div class="ticker-bar">
+  <div class="ticker-label">MARKETS</div>
+  <div style="overflow:hidden;flex:1">
+    <div class="ticker-scroll" id="ticker"></div>
+  </div>
+</div>
+<header>
+  <div class="brand">
+    <div class="brand-name">SIGNAL BRIEF</div>
+    <div class="brand-sub">AI-Powered Market Intelligence</div>
+  </div>
+  <div class="date-stamp">
+    <div id="dateStr"></div>
+    <div class="generated" id="generatedStr">Loading briefing…</div>
+    <div class="live"><div class="live-dot"></div>TWICE-DAILY REFRESH</div>
+  </div>
+</header>
+<main>
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-text">Loading Latest Briefing</div>
+    <div class="loading-bar"><div class="loading-fill"></div></div>
+  </div>
+  <div class="error-box" id="errorBox"></div>
+  <div class="briefing" id="briefing">
+    <div class="section-header">
+      <div class="section-label">Today's Intelligence Report</div>
+      <div class="section-line"></div>
+    </div>
+    <div class="briefing-content" id="briefingText"></div>
+    <div class="section-header mt" id="signalsHeader" style="display:none">
+      <div class="section-label">Market Signals</div>
+      <div class="section-line"></div>
+    </div>
+    <div class="signals-grid" id="signalsGrid"></div>
+    <div class="verdict-box" id="verdictBox" style="display:none">
+      <div class="verdict-icon" id="verdictIcon">📊</div>
+      <div>
+        <div class="verdict-label">Overall Market Outlook</div>
+        <div class="verdict-text" id="verdictText"></div>
+      </div>
+    </div>
+    <div class="sources" id="sourcesBox" style="display:none">
+      <div class="section-label" style="margin-bottom:10px">Sources</div>
+      <div id="sourcesList"></div>
+    </div>
+  </div>
+  <div class="disclaimer">
+    SIGNAL BRIEF is AI-generated from live web search at 6:00 AM and 1:00 PM Eastern. This is not financial advice.<br>
+    All market data and analysis is for informational purposes only. Always conduct your own research. Consult a licensed financial advisor before making investment decisions.
+  </div>
+</main>
+<script>
+  const dateEl = document.getElementById('dateStr');
+  dateEl.textContent = new Date().toLocaleDateString('en-US', {
+    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+  });
+
+  function renderTicker(tickers) {
+    const el = document.getElementById('ticker');
+    if (!tickers || !tickers.length) {
+      el.innerHTML = '<div class="ticker-item">No ticker data yet — waiting for first cron run</div>';
+      return;
+    }
+    // Duplicate once for seamless scroll.
+    const doubled = [...tickers, ...tickers];
+    el.innerHTML = doubled.map(t => {
+      const pct = (t.change_pct || '').trim();
+      const isDown = pct.startsWith('-');
+      const arrow = isDown ? '▼' : '▲';
+      const klass = isDown ? 'down' : 'up';
+      return `<div class="ticker-item">
+        <span class="sym">${escapeHtml(t.symbol || '')}</span>
+        ${escapeHtml(t.price || '')}
+        <span class="${klass}">${arrow} ${escapeHtml(pct)}</span>
+      </div>`;
+    }).join('');
+  }
+
+  function renderBriefing(b) {
+    document.getElementById('briefingText').textContent = b.summary || '';
+    const grid = document.getElementById('signalsGrid');
+    grid.innerHTML = '';
+    if (Array.isArray(b.signals) && b.signals.length) {
+      document.getElementById('signalsHeader').style.display = 'flex';
+      b.signals.forEach(sig => {
+        const t = sig.type || 'neutral';
+        const card = document.createElement('div');
+        card.className = 'signal-card ' + t;
+        card.innerHTML = `
+          <div class="signal-bar"></div>
+          <div class="signal-type ${t}">${t.toUpperCase()} · ${escapeHtml(sig.asset || 'market').toUpperCase()}</div>
+          <div class="signal-title">${escapeHtml(sig.title || '')}</div>
+          <div class="signal-desc">${escapeHtml(sig.desc || '')}</div>`;
+        grid.appendChild(card);
+      });
+    }
+    if (b.verdict) {
+      document.getElementById('verdictBox').style.display = 'flex';
+      document.getElementById('verdictText').textContent = b.verdict;
+      const icons = { bullish: '📈', bearish: '📉', mixed: '⚖️' };
+      document.getElementById('verdictIcon').textContent = icons[b.sentiment] || '📊';
+    }
+    if (Array.isArray(b.sources) && b.sources.length) {
+      document.getElementById('sourcesBox').style.display = 'block';
+      const list = document.getElementById('sourcesList');
+      list.innerHTML = b.sources.map(u =>
+        `<a href="${escapeAttr(u)}" target="_blank" rel="noopener">${escapeHtml(u)}</a>`
+      ).join('');
+    }
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({
+      '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'
+    }[c]));
+  }
+  function escapeAttr(s) { return escapeHtml(s); }
+
+  function showError(msg) {
+    document.getElementById('loadingScreen').style.display = 'none';
+    const eb = document.getElementById('errorBox');
+    eb.style.display = 'block';
+    eb.textContent = '⚠ ' + msg;
+  }
+
+  async function load() {
+    try {
+      // Cache-bust so Vercel's edge cache never serves an old briefing here.
+      const res = await fetch('/briefing.json?t=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) throw new Error(`briefing.json not found (HTTP ${res.status}). The first cron run may not have happened yet.`);
+      const b = await res.json();
+
+      renderTicker(b.tickers);
+
+      if (b.generated_at) {
+        const when = new Date(b.generated_at);
+        document.getElementById('generatedStr').textContent =
+          'Generated ' + when.toLocaleString('en-US', {
+            hour: 'numeric', minute: '2-digit',
+            month: 'short', day: 'numeric', timeZone: 'America/New_York'
+          }) + ' ET';
+      }
+
+      renderBriefing(b);
+
+      document.getElementById('loadingScreen').style.display = 'none';
+      document.getElementById('briefing').style.display = 'block';
+    } catch (err) {
+      console.error(err);
+      showError(err.message);
+    }
+  }
+
+  load();
+</script>
+</body>
+</html>

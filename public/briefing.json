@@ -1,0 +1,10 @@
+{
+  "summary": "Waiting for the first scheduled briefing run. Once the GitHub Actions workflow fires at 6:00 AM or 1:00 PM Eastern, this file will be overwritten with a fresh market briefing pulled from live web search. You can also trigger it manually from the Actions tab (refresh-briefing -> Run workflow).",
+  "signals": [],
+  "tickers": [],
+  "verdict": "Briefing pending — first cron run hasn't occurred yet.",
+  "sentiment": "mixed",
+  "sources": [],
+  "generated_at": null,
+  "model": null
+}
