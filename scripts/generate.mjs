@@ -150,6 +150,11 @@ if (!Array.isArray(parsed.sources) || parsed.sources.length === 0) {
   parsed.sources = [...new Set(urls)].slice(0, 10);
 }
 
+// ---- Attach Fear & Greed indices ---------------------------------------
+// Both calls are best-effort: a failure on either leaves the field null and
+// the dashboard simply hides that gauge.
+parsed.fear_greed = await fetchFearGreed();
+
 parsed.generated_at = new Date().toISOString();
 parsed.model = MODEL;
 
@@ -159,3 +164,69 @@ console.log(`Wrote ${OUT_PATH}`);
 console.log(`  signals: ${parsed.signals?.length ?? 0}`);
 console.log(`  tickers: ${parsed.tickers?.length ?? 0}`);
 console.log(`  sources: ${parsed.sources?.length ?? 0}`);
+console.log(`  fear_greed.stocks: ${parsed.fear_greed?.stocks ? parsed.fear_greed.stocks.value + ' (' + parsed.fear_greed.stocks.label + ')' : 'unavailable'}`);
+console.log(`  fear_greed.crypto: ${parsed.fear_greed?.crypto ? parsed.fear_greed.crypto.value + ' (' + parsed.fear_greed.crypto.label + ')' : 'unavailable'}`);
+
+// ---- Fear & Greed fetchers ---------------------------------------------
+async function fetchFearGreed() {
+  const [stocks, crypto] = await Promise.all([
+    fetchCnnFearGreed().catch((e) => {
+      console.warn("CNN F&G failed:", e.message);
+      return null;
+    }),
+    fetchCryptoFearGreed().catch((e) => {
+      console.warn("Crypto F&G failed:", e.message);
+      return null;
+    }),
+  ]);
+  return { stocks, crypto };
+}
+
+async function fetchCnnFearGreed() {
+  // CNN's Fear & Greed endpoint is undocumented but widely relied on.
+  // Requires a real-looking User-Agent or it 418s.
+  const res = await fetch(
+    "https://production.dataviz.cnn.io/index/fearandgreed/graphdata",
+    {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+        Accept: "application/json, text/plain, */*",
+      },
+    }
+  );
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const data = await res.json();
+  const fg = data.fear_and_greed;
+  if (!fg || typeof fg.score !== "number") {
+    throw new Error("Unexpected CNN payload shape");
+  }
+  return {
+    value: Math.round(fg.score),
+    label: titleCase(String(fg.rating || "")),
+    previous_close:
+      typeof fg.previous_close === "number"
+        ? Math.round(fg.previous_close)
+        : null,
+    updated: fg.timestamp || null,
+  };
+}
+
+async function fetchCryptoFearGreed() {
+  const res = await fetch("https://api.alternative.me/fng/?limit=1");
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const data = await res.json();
+  const d = data?.data?.[0];
+  if (!d) throw new Error("Unexpected Alt.me payload shape");
+  return {
+    value: Number(d.value),
+    label: d.value_classification,
+    updated: d.timestamp
+      ? new Date(Number(d.timestamp) * 1000).toISOString()
+      : null,
+  };
+}
+
+function titleCase(s) {
+  return s.replace(/\b\w/g, (c) => c.toUpperCase());
+}
