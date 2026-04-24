@@ -1,98 +1,97 @@
 {
-  "summary": "Markets surged to fresh all-time highs on Wednesday as President Trump extended the Iran ceasefire indefinitely, relieving geopolitical pressure that had weighed on risk assets. The S&P 500 gained nearly 1% to a new record while the Nasdaq Composite jumped 1.6% to its own all-time high, with semiconductor stocks notching their 16th consecutive session of gains—the longest winning streak ever. Tesla reported better-than-expected Q1 earnings after the bell, beating on EPS despite a revenue miss, as the company expanded its Robotaxi service to Dallas and Houston. Bitcoin rallied above $78,000 following the ceasefire extension and a massive $2.54 billion purchase by MicroStrategy, while Ethereum climbed past $2,390. Looking ahead, investors are laser-focused on next week's FOMC decision on April 29 and mega-cap tech earnings from Microsoft, Amazon, Alphabet, and Meta, which report after that same close. With oil still elevated near $100, Q1 GDP and PCE inflation data due April 30, and Fed Chair Kevin Warsh's confirmation hearing revealing political tensions over the Powell investigation, markets face a critical test of whether tech can justify its premium valuations and the Fed can maintain its hawkish stance.",
+  "summary": "Markets surged Friday as Intel posted a sixth consecutive earnings beat and its best day potentially since 1987, driving semiconductors to an 18th straight gain and powering the Nasdaq up 1.5% midday. The S&P 500 closed at a record 7,138 on Thursday before adding another 0.7% Friday, as 81% of S&P 500 companies beat earnings forecasts this season. However, consumer sentiment hit a record low of 49.8 in April despite ceasefire news, and Meta announced 10% workforce cuts totaling 8,000 employees amid AI spending pressures. The FOMC meets April 28-29 with Powell expected to hold rates at 3.5-3.75%, but markets are watching for any language acknowledging that falling oil could change the cut path. Bitcoin held near $77,600 as the $292 million KelpDAO hack rattled DeFi, while spot Bitcoin ETFs recorded $2.1 billion in inflows over eight days. Oil volatility and Iran war headlines continue to inject uncertainty, but tech earnings strength and AI capex momentum are overpowering macro jitters for now.",
   "signals": [
     {
       "type": "bullish",
-      "title": "Trump Extends Iran Ceasefire Indefinitely",
-      "desc": "President Trump's announcement of indefinite ceasefire extension removed geopolitical overhang, triggering risk-on rallies across equities and crypto with S&P 500 and Nasdaq hitting fresh records.",
+      "title": "Intel earnings beat drives semiconductor rally to 18-day streak",
+      "desc": "Intel posted its sixth consecutive quarterly beat with upbeat Q2 guidance, triggering a potential best-day-since-1987 rally and lifting AMD +14%, Texas Instruments +18%, powering tech-heavy Nasdaq gains.",
       "asset": "stocks"
     },
     {
       "type": "bullish",
-      "title": "Semiconductors Hit 16-Day Win Streak Record",
-      "desc": "Chipmakers extended their winning streak to 16 consecutive sessions—the longest ever—as AI infrastructure demand remains robust ahead of mega-cap tech earnings next week.",
+      "title": "S&P 500 earnings season delivers 81% beat rate",
+      "desc": "Strong corporate earnings with 81% of S&P 500 firms beating estimates and 76% topping revenue forecasts support equity markets despite geopolitical uncertainty and record-low consumer sentiment.",
       "asset": "stocks"
     },
     {
-      "type": "bullish",
-      "title": "Bitcoin Surges Past $78K on MicroStrategy Buy",
-      "desc": "Bitcoin rallied to $78,300 after MicroStrategy disclosed a $2.54 billion BTC purchase (absorbing 3x April miner supply) and ceasefire extension boosted risk appetite, testing key $79-80K resistance.",
-      "asset": "crypto"
-    },
-    {
-      "type": "neutral",
-      "title": "FOMC Meeting April 29 with No Dot Plot",
-      "desc": "Fed holds rates at 3.50-3.75% as expected, but with no SEP projections, Powell's language on inflation vs. growth trade-off will carry outsized weight for rate cut timing into H2 2026.",
+      "type": "bearish",
+      "title": "Consumer sentiment hits record low at 49.8",
+      "desc": "University of Michigan final April reading of 49.8 marks the lowest on record—below financial crisis and pandemic levels—signaling persistent inflation fears despite Iran ceasefire extension.",
       "asset": "macro"
     },
     {
-      "type": "mixed",
-      "title": "Tesla Beats EPS but Robotaxi Revenue Uncertainty Looms",
-      "desc": "Tesla reported Q1 EPS of $0.41 vs. $0.35 expected and expanded Robotaxi to Dallas/Houston, but revenue missed at $22.39B and concerns over multi-trillion dollar chipmaking capex persist.",
+      "type": "bearish",
+      "title": "Meta cuts 10% of workforce as AI spending escalates",
+      "desc": "Meta confirmed 8,000 layoffs effective May 20 and scrapped 6,000 open roles as it redirects resources to AI infrastructure, signaling margin pressure across Big Tech despite strong revenue.",
       "asset": "stocks"
+    },
+    {
+      "type": "neutral",
+      "title": "$292 million KelpDAO hack rattles DeFi as Aave coordinates rescue",
+      "desc": "Year's biggest crypto theft hit Aave protocol, prompting industry-wide recovery effort and raising fresh questions about DeFi security ahead of institutional adoption; Bitcoin ETF inflows continue at $2.1B over eight days.",
+      "asset": "crypto"
     }
   ],
   "tickers": [
     {
       "symbol": "SPY",
-      "price": "713.79",
-      "change_pct": "+1.05"
+      "price": "714.40",
+      "change_pct": "+0.74"
     },
     {
       "symbol": "QQQ",
-      "price": "648.41",
-      "change_pct": "+1.64"
+      "price": "651.42",
+      "change_pct": "+1.53"
     },
     {
       "symbol": "BTC",
-      "price": "78304",
-      "change_pct": "+2.57"
+      "price": "77640",
+      "change_pct": "-0.33"
     },
     {
       "symbol": "ETH",
-      "price": "2393",
-      "change_pct": "+2.84"
+      "price": "2315",
+      "change_pct": "-0.43"
     },
     {
       "symbol": "GOLD",
-      "price": "3315",
-      "change_pct": "-0.22"
+      "price": "4723",
+      "change_pct": "+0.54"
     },
     {
       "symbol": "OIL",
-      "price": "99.20",
-      "change_pct": "+0.35"
+      "price": "96.50",
+      "change_pct": "+3.80"
     },
     {
       "symbol": "DXY",
-      "price": "99.85",
-      "change_pct": "+0.12"
+      "price": "98.70",
+      "change_pct": "+0.20"
     }
   ],
-  "verdict": "Risk-on momentum is strong but faces major tests next week with FOMC, mega-cap earnings, and key macro data—hold above support or face sharp reversal.",
+  "verdict": "Tech earnings momentum and chip-led rally are overpowering consumer sentiment collapse and geopolitical noise, but FOMC language next week and oil volatility remain key swing factors.",
   "sentiment": "bullish",
   "sources": [
-    "https://www.bloomberg.com/news/articles/2026-04-21/stock-market-today-dow-s-p-live-updates",
-    "https://finance.yahoo.com/markets/stocks/live/stock-market-today-wednesday-april-22-dow-sp-500-nasdaq-trump-us-iran-ceasefire-230429476.html",
-    "https://www.coindesk.com/markets/2026/04/22/bitcoin-faces-make-or-break-moment-at-two-major-on-chain-resistance-levels",
-    "https://blog.kraken.com/economic-brief/april-22-2026",
-    "https://www.cnbc.com/2026/04/21/kevin-warsh-fed-confirmation-hearing-trump-live-updates.html",
-    "https://www.tradestation.com/insights/2026/04/22/big-tech-earnings-april-2026/",
-    "https://finance.yahoo.com/markets/stocks/article/tesla-q1-earnings-preview-robotaxi-rollout-mega-capex-spending-in-focus-135049863.html"
+    "https://www.thestreet.com/latest-news/stock-market-today-apr-24-2026-updates",
+    "https://www.cnbc.com/2026/04/22/stock-market-today-live-updates.html",
+    "https://www.coindesk.com",
+    "https://www.devere-group.com/why-stock-markets-are-hitting-record-highs-despite-the-us-iran-war/",
+    "https://tradingeconomics.com/commodity/gold",
+    "https://www.intc.com/news-events/press-releases/detail/1767/intel-reports-first-quarter-2026-financial-results"
   ],
   "fear_greed": {
     "stocks": {
-      "value": 68,
+      "value": 66,
       "label": "Greed",
-      "previous_close": 68,
-      "updated": "2026-04-23T00:00:00+00:00"
+      "previous_close": 66,
+      "updated": "2026-04-24T17:49:05+00:00"
     },
     "crypto": {
-      "value": 46,
+      "value": 39,
       "label": "Fear",
-      "updated": "2026-04-23T00:00:00.000Z"
+      "updated": "2026-04-24T00:00:00.000Z"
     }
   },
-  "generated_at": "2026-04-23T06:43:05.696Z",
+  "generated_at": "2026-04-24T17:51:53.740Z",
   "model": "claude-sonnet-4-5-20250929"
 }
