@@ -1,83 +1,84 @@
 {
-  "summary": "Markets surged to record highs on Friday as Intel's blowout Q1 earnings ignited a powerful semiconductor rally that lifted the Nasdaq 1.63% and the S&P 500 0.80%, both closing at all-time peaks. Intel soared 23.6% after crushing estimates and raising guidance on surging AI server demand, dragging AMD up 13.9% and pushing Nvidia past the $5 trillion market cap threshold. The Justice Department's decision to drop its investigation into Fed Chair Jerome Powell removed a lingering uncertainty ahead of next week's FOMC decision, though Powell faces questions Wednesday about whether he will resign now that the probe has concluded. Crypto markets held relatively steady with Bitcoin hovering near $78,000 and Ethereum above $2,300 as traders balanced Middle East ceasefire hopes against elevated oil prices. Q1 earnings season is delivering strong beats, with blended S&P 500 growth now tracking 15.1% year-over-year, up from 13% a week ago, while March CPI showed headline inflation accelerating to 3.3% driven by a 21.2% spike in gasoline prices.",
+  "summary": "Markets advanced Friday as chipmakers surged on Intel's blowout earnings and hopes for US-Iran peace talks in Pakistan lifted sentiment. The S&P 500 and Nasdaq closed at record highs while the Dow slipped modestly, reflecting a divergence between tech and energy-sensitive sectors. Intel shares soared more than 20% after reporting stronger-than-expected Q1 results driven by AI data-center demand, igniting a rally in AMD (+12%) and across the semiconductor sector. Bitcoin ETFs extended their strongest inflow streak since October, pulling in $2 billion over eight consecutive days as institutional capital returned. Meanwhile, investors are looking ahead to the April 28-29 FOMC meeting where markets price a hold at 3.5%-3.75%, with traders focused on Powell's language around inflation and the path for rate cuts. Meta announced it will cut 10% of its workforce ahead of its April 29 earnings report, while mega-cap tech (Microsoft, Alphabet, Amazon, Meta) reports Wednesday evening in a make-or-break test of AI monetization and capex spending. The mix of strong AI-driven growth, geopolitical optimism, and persistent inflation creates a backdrop where the Fed must balance data-dependency against ongoing uncertainty, setting the stage for heightened volatility around next week's policy decision and Big Tech earnings.",
   "signals": [
     {
       "type": "bullish",
-      "title": "Intel crushes Q1 earnings, semiconductor rally lifts Nasdaq to record",
-      "desc": "Intel surged 23.6% on blowout earnings and strong AI server CPU demand, sparking broad chip sector rally with AMD up 13.9% and Nvidia reclaiming $5 trillion market cap.",
+      "title": "Intel earnings spark historic chip rally on AI data-center demand",
+      "desc": "Intel reported Q1 beat with double-digit server CPU growth, sending shares up 21% and fueling AMD +12% surge as analysts upgrade on CPU bottleneck demand.",
       "asset": "stocks"
     },
     {
       "type": "bullish",
-      "title": "Justice Department drops Fed Chair Powell investigation",
-      "desc": "DOJ referred criminal probe of Powell to Fed inspector general, removing uncertainty overhang and clearing path for potential leadership transition to nominee Kevin Warsh.",
-      "asset": "stocks"
-    },
-    {
-      "type": "bullish",
-      "title": "S&P 500 earnings growth accelerates to 15.1% in Q1 2026",
-      "desc": "Blended earnings growth rose from 13% last week as 78% of reporters beat estimates, marking the sixth consecutive quarter of double-digit growth and supporting elevated valuations.",
-      "asset": "stocks"
-    },
-    {
-      "type": "neutral",
-      "title": "Bitcoin consolidates near $78,000 as Middle East tensions persist",
-      "desc": "Crypto held tight ranges with Bitcoin at key resistance levels and Ethereum above $2,300 as traders weigh ceasefire extension against naval blockade and ongoing Iran tensions.",
+      "title": "Bitcoin ETF inflows hit $2B over 8-day streak, BlackRock IBIT now top 1% ETF",
+      "desc": "Spot Bitcoin ETFs logged their longest inflow streak since October 2025, with BlackRock's IBIT holding 806,700 BTC (3.8% of supply) and absorbing 91% of flows.",
       "asset": "crypto"
     },
     {
-      "type": "bearish",
-      "title": "March CPI jumps 0.9% month-over-month on energy spike",
-      "desc": "Headline inflation accelerated to 3.3% year-over-year as gasoline surged 21.2%, complicating Fed rate cut path and raising stagflation concerns ahead of Wednesday's FOMC meeting.",
+      "type": "neutral",
+      "title": "FOMC meeting April 29 priced for hold, traders focus on Powell language",
+      "desc": "Markets price 99.7% probability of no change at 3.5%-3.75% range; focus shifts to inflation commentary and rate-cut timeline amid sticky CPI and oil near $96.",
       "asset": "macro"
+    },
+    {
+      "type": "bearish",
+      "title": "Meta to cut 10% of workforce (8,000 employees) as AI capex surges",
+      "desc": "Meta confirmed layoffs ahead of April 29 earnings, as investors scrutinize whether $135B AI capex plan will translate to revenue growth amid disruption fears.",
+      "asset": "stocks"
+    },
+    {
+      "type": "mixed",
+      "title": "US-Iran peace talks in Pakistan ease oil pressure, but risk remains elevated",
+      "desc": "Reports of Iranian foreign minister arriving in Pakistan for talks sent WTI down 2.4% to ~$94, but geopolitical uncertainty keeps Strait of Hormuz supply risk live.",
+      "asset": "commodities"
     }
   ],
   "tickers": [
     {
       "symbol": "SPY",
-      "price": "716.50",
-      "change_pct": "+0.80"
+      "price": "709.89",
+      "change_pct": "+0.82"
     },
     {
       "symbol": "QQQ",
-      "price": "663.46",
-      "change_pct": "+1.63"
+      "price": "663.88",
+      "change_pct": "+1.91"
     },
     {
       "symbol": "BTC",
-      "price": "77529",
-      "change_pct": "-0.19"
+      "price": "77548",
+      "change_pct": "+0.11"
     },
     {
       "symbol": "ETH",
-      "price": "2315",
-      "change_pct": "+0.23"
+      "price": "2316",
+      "change_pct": "+0.01"
     },
     {
       "symbol": "GOLD",
-      "price": "3285",
-      "change_pct": "+0.15"
+      "price": "3345",
+      "change_pct": "-0.20"
     },
     {
       "symbol": "OIL",
-      "price": "105.20",
-      "change_pct": "-0.45"
+      "price": "94.10",
+      "change_pct": "-2.40"
     },
     {
       "symbol": "DXY",
-      "price": "99.85",
-      "change_pct": "-0.12"
+      "price": "99.80",
+      "change_pct": "+0.15"
     }
   ],
-  "verdict": "Tech-driven bullish momentum persists into the weekend, but elevated oil and inflation readings keep macro risks front and center for Wednesday's Fed decision.",
+  "verdict": "Semiconductors lead markets to records on AI infrastructure demand while FOMC and mega-cap tech earnings next week will determine if the rally extends or pauses.",
   "sentiment": "bullish",
   "sources": [
-    "https://www.fool.com/coverage/stock-market-today/2026/04/24/stock-market-today-april-24-s-and-p-500-and-nasdaq-set-new-highs-on-tech-surge/",
     "https://www.cnbc.com/2026/04/23/stock-market-today-live-updates.html",
-    "https://www.cnbc.com/2026/04/24/will-he-stay-or-will-he-go-with-criminal-probe-over-fed-chair-powell-faces-big-decision.html",
-    "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-april-24-2026-values-up-over-the-last-five-days-112919953.html",
-    "https://www.bls.gov/news.release/cpi.nr0.htm",
-    "https://insight.factset.com/sp-500-earnings-season-update-april-24-2026"
+    "https://invezz.com/news/2026/04/24/sp-500-nasdaq-hit-records-dow-slips-as-intel-fuels-rally/",
+    "https://finance.yahoo.com/markets/crypto/articles/bitcoin-news-bitcoin-etfs-just-151207323.html",
+    "https://blog.kraken.com/economic-brief/april-22-2026",
+    "https://www.heygotrade.com/en/blog/5-stocks-earnings-season-april-2026/",
+    "https://cryptonews.net/news/bitcoin/32765071/",
+    "https://www.tradestation.com/insights/2026/04/22/big-tech-earnings-april-2026/"
   ],
   "fear_greed": {
     "stocks": {
@@ -87,11 +88,11 @@
       "updated": "2026-04-24T23:59:49+00:00"
     },
     "crypto": {
-      "value": 31,
+      "value": 33,
       "label": "Fear",
-      "updated": "2026-04-25T00:00:00.000Z"
+      "updated": "2026-04-26T00:00:00.000Z"
     }
   },
-  "generated_at": "2026-04-25T17:39:27.613Z",
+  "generated_at": "2026-04-26T10:54:25.638Z",
   "model": "claude-sonnet-4-5-20250929"
 }
