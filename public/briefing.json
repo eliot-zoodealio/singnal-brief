@@ -1,35 +1,35 @@
 {
-  "summary": "Markets advanced Friday as chipmakers surged on Intel's blowout earnings and hopes for US-Iran peace talks in Pakistan lifted sentiment. The S&P 500 and Nasdaq closed at record highs while the Dow slipped modestly, reflecting a divergence between tech and energy-sensitive sectors. Intel shares soared more than 20% after reporting stronger-than-expected Q1 results driven by AI data-center demand, igniting a rally in AMD (+12%) and across the semiconductor sector. Bitcoin ETFs extended their strongest inflow streak since October, pulling in $2 billion over eight consecutive days as institutional capital returned. Meanwhile, investors are looking ahead to the April 28-29 FOMC meeting where markets price a hold at 3.5%-3.75%, with traders focused on Powell's language around inflation and the path for rate cuts. Meta announced it will cut 10% of its workforce ahead of its April 29 earnings report, while mega-cap tech (Microsoft, Alphabet, Amazon, Meta) reports Wednesday evening in a make-or-break test of AI monetization and capex spending. The mix of strong AI-driven growth, geopolitical optimism, and persistent inflation creates a backdrop where the Fed must balance data-dependency against ongoing uncertainty, setting the stage for heightened volatility around next week's policy decision and Big Tech earnings.",
+  "summary": "Markets rallied Friday as Iran peace talks sparked optimism, with the S&P 500 and Nasdaq hitting fresh records. Intel's massive Q1 earnings beat, driven by AI data center demand, sent its stock surging 21% and lifted AMD 13% in sympathy, fueling a semiconductor boom that pushed the iShares Semiconductor ETF to its 17th consecutive positive session. Bitcoin ETF inflows accelerated, with eight straight days totaling over $2 billion, the longest streak since October 2025, while BlackRock's IBIT options open interest surpassed Deribit's for the first time. The FOMC meeting on April 29 looms as Powell's final decision before his May exit, with futures pricing a 99.5% probability of holding rates at 3.50-3.75% amid persistent inflation and geopolitical uncertainty. Q1 earnings season shows 84% of S&P 500 companies beating EPS estimates, with blended growth at 15.1%, though firms like GE Aerospace and Eli Lilly are holding guidance despite strong results, citing macroeconomic and conflict-related headwinds.",
   "signals": [
     {
       "type": "bullish",
-      "title": "Intel earnings spark historic chip rally on AI data-center demand",
-      "desc": "Intel reported Q1 beat with double-digit server CPU growth, sending shares up 21% and fueling AMD +12% surge as analysts upgrade on CPU bottleneck demand.",
+      "title": "Intel Q1 earnings crush estimates, AI data center demand surges",
+      "desc": "Intel reported double-digit server CPU unit growth driven by AI infrastructure, sending its stock up 21% and lifting AMD 13% as analysts upgraded the sector.",
       "asset": "stocks"
     },
     {
       "type": "bullish",
-      "title": "Bitcoin ETF inflows hit $2B over 8-day streak, BlackRock IBIT now top 1% ETF",
-      "desc": "Spot Bitcoin ETFs logged their longest inflow streak since October 2025, with BlackRock's IBIT holding 806,700 BTC (3.8% of supply) and absorbing 91% of flows.",
+      "title": "Bitcoin ETF inflows hit $2B over 8-day streak, BlackRock IBIT dominates",
+      "desc": "Spot Bitcoin ETFs logged eight consecutive days of inflows totaling $2 billion, the longest streak since October 2025, with IBIT absorbing 91% of flows.",
       "asset": "crypto"
     },
     {
       "type": "neutral",
-      "title": "FOMC meeting April 29 priced for hold, traders focus on Powell language",
-      "desc": "Markets price 99.7% probability of no change at 3.5%-3.75% range; focus shifts to inflation commentary and rate-cut timeline amid sticky CPI and oil near $96.",
+      "title": "Powell's final FOMC meeting April 29 expected to hold rates at 3.50-3.75%",
+      "desc": "CME FedWatch shows 99.5% probability of a hold as Powell's last meeting before Warsh takes over in May, with no rate cuts expected amid elevated inflation.",
       "asset": "macro"
     },
     {
-      "type": "bearish",
-      "title": "Meta to cut 10% of workforce (8,000 employees) as AI capex surges",
-      "desc": "Meta confirmed layoffs ahead of April 29 earnings, as investors scrutinize whether $135B AI capex plan will translate to revenue growth amid disruption fears.",
+      "type": "bullish",
+      "title": "S&P 500 and Nasdaq hit all-time highs on Iran peace talk optimism",
+      "desc": "Iran's foreign minister traveled to Pakistan for U.S. talks, lifting equities and sending oil down 2.4% as investors priced in de-escalation.",
       "asset": "stocks"
     },
     {
-      "type": "mixed",
-      "title": "US-Iran peace talks in Pakistan ease oil pressure, but risk remains elevated",
-      "desc": "Reports of Iranian foreign minister arriving in Pakistan for talks sent WTI down 2.4% to ~$94, but geopolitical uncertainty keeps Strait of Hormuz supply risk live.",
-      "asset": "commodities"
+      "type": "bearish",
+      "title": "Eli Lilly drops 4% on weak launch data for GLP-1 pill Foundayo",
+      "desc": "First full-week prescription data showed soft uptake for Lilly's oral GLP-1 versus Novo Nordisk's Wegovy, pressuring shares and raising competitive concerns.",
+      "asset": "stocks"
     }
   ],
   "tickers": [
@@ -45,40 +45,39 @@
     },
     {
       "symbol": "BTC",
-      "price": "77548",
-      "change_pct": "+0.11"
+      "price": "78004.97",
+      "change_pct": "+0.63"
     },
     {
       "symbol": "ETH",
-      "price": "2316",
-      "change_pct": "+0.01"
+      "price": "2330.56",
+      "change_pct": "+0.59"
     },
     {
       "symbol": "GOLD",
-      "price": "3345",
-      "change_pct": "-0.20"
+      "price": "4707.00",
+      "change_pct": "+1.00"
     },
     {
       "symbol": "OIL",
-      "price": "94.10",
+      "price": "97.60",
       "change_pct": "-2.40"
     },
     {
       "symbol": "DXY",
-      "price": "99.80",
-      "change_pct": "+0.15"
+      "price": "103.50",
+      "change_pct": "+0.30"
     }
   ],
-  "verdict": "Semiconductors lead markets to records on AI infrastructure demand while FOMC and mega-cap tech earnings next week will determine if the rally extends or pauses.",
+  "verdict": "Risk-on flows continue as peace talks offset inflation concerns and Powell's April 29 hold sets stage for post-FOMC earnings volatility from mega-cap tech.",
   "sentiment": "bullish",
   "sources": [
     "https://www.cnbc.com/2026/04/23/stock-market-today-live-updates.html",
-    "https://invezz.com/news/2026/04/24/sp-500-nasdaq-hit-records-dow-slips-as-intel-fuels-rally/",
-    "https://finance.yahoo.com/markets/crypto/articles/bitcoin-news-bitcoin-etfs-just-151207323.html",
-    "https://blog.kraken.com/economic-brief/april-22-2026",
-    "https://www.heygotrade.com/en/blog/5-stocks-earnings-season-april-2026/",
-    "https://cryptonews.net/news/bitcoin/32765071/",
-    "https://www.tradestation.com/insights/2026/04/22/big-tech-earnings-april-2026/"
+    "https://www.cnbc.com/2026/04/24/amd-shares-soar-on-no-company-news-heres-what-has-investors-so-excited.html",
+    "https://www.coindesk.com/markets/2026/04/25/blackrock-s-bitcoin-etf-just-hit-a-massive-milestone-that-proves-crypto-is-now-a-mainstream-bet",
+    "https://goldsilver.com/industry-news/goldsilver-news/gold-price-today-what-to-watch-before-april-29-fomc/",
+    "https://www.factset.com/earningsinsight",
+    "https://blog.kraken.com/economic-brief/april-22-2026"
   ],
   "fear_greed": {
     "stocks": {
@@ -93,6 +92,6 @@
       "updated": "2026-04-26T00:00:00.000Z"
     }
   },
-  "generated_at": "2026-04-26T10:54:25.638Z",
+  "generated_at": "2026-04-26T17:40:31.224Z",
   "model": "claude-sonnet-4-5-20250929"
 }
