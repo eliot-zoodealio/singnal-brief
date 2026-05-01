@@ -1,97 +1,97 @@
 {
-  "summary": "Markets rallied Friday as Iran peace talks sparked optimism, with the S&P 500 and Nasdaq hitting fresh records. Intel's massive Q1 earnings beat, driven by AI data center demand, sent its stock surging 21% and lifted AMD 13% in sympathy, fueling a semiconductor boom that pushed the iShares Semiconductor ETF to its 17th consecutive positive session. Bitcoin ETF inflows accelerated, with eight straight days totaling over $2 billion, the longest streak since October 2025, while BlackRock's IBIT options open interest surpassed Deribit's for the first time. The FOMC meeting on April 29 looms as Powell's final decision before his May exit, with futures pricing a 99.5% probability of holding rates at 3.50-3.75% amid persistent inflation and geopolitical uncertainty. Q1 earnings season shows 84% of S&P 500 companies beating EPS estimates, with blended growth at 15.1%, though firms like GE Aerospace and Eli Lilly are holding guidance despite strong results, citing macroeconomic and conflict-related headwinds.",
+  "summary": "Markets extended their rally on Friday as the S&P 500 and Nasdaq hit fresh all-time highs, propelled by Apple's 3% surge after the iPhone maker topped Q2 earnings estimates and issued upbeat guidance. Oil prices retreated 2% on reports that Iran sent a peace proposal through Pakistani mediators, easing near-term inflation fears. The Fed's dramatic 8-4 split vote Wednesday to hold rates steady at 3.5-3.75% continues to reverberate, with four dissenting FOMC members—the most since 1992—underscoring deep uncertainty over Middle East war risks and elevated energy-driven inflation. Powell confirmed he will remain as a Fed governor after his May 15 term as chair ends, citing legal pressures. Bitcoin climbed back above $77,000 supported by mild ETF inflows, while Ethereum hovered near $2,300 as outflows persisted. Q1 earnings season is showing 15% year-over-year growth, with 84% of S&P 500 companies beating estimates, though tech faces scrutiny over AI spending returns.",
   "signals": [
     {
       "type": "bullish",
-      "title": "Intel Q1 earnings crush estimates, AI data center demand surges",
-      "desc": "Intel reported double-digit server CPU unit growth driven by AI infrastructure, sending its stock up 21% and lifting AMD 13% as analysts upgraded the sector.",
+      "title": "Apple earnings beat drives tech rally to new records",
+      "desc": "Apple reported 17% revenue growth and better-than-expected guidance despite iPhone sales miss, lifting the stock 3-4% and pushing the S&P 500 and Nasdaq to all-time highs.",
       "asset": "stocks"
     },
     {
       "type": "bullish",
-      "title": "Bitcoin ETF inflows hit $2B over 8-day streak, BlackRock IBIT dominates",
-      "desc": "Spot Bitcoin ETFs logged eight consecutive days of inflows totaling $2 billion, the longest streak since October 2025, with IBIT absorbing 91% of flows.",
-      "asset": "crypto"
-    },
-    {
-      "type": "neutral",
-      "title": "Powell's final FOMC meeting April 29 expected to hold rates at 3.50-3.75%",
-      "desc": "CME FedWatch shows 99.5% probability of a hold as Powell's last meeting before Warsh takes over in May, with no rate cuts expected amid elevated inflation.",
-      "asset": "macro"
-    },
-    {
-      "type": "bullish",
-      "title": "S&P 500 and Nasdaq hit all-time highs on Iran peace talk optimism",
-      "desc": "Iran's foreign minister traveled to Pakistan for U.S. talks, lifting equities and sending oil down 2.4% as investors priced in de-escalation.",
-      "asset": "stocks"
+      "title": "Oil falls on Iran peace proposal reports",
+      "desc": "WTI crude dropped 2% after reports Iran sent response to U.S. peace amendments via Pakistan mediators, reducing near-term energy shock and inflation tail risk.",
+      "asset": "commodities"
     },
     {
       "type": "bearish",
-      "title": "Eli Lilly drops 4% on weak launch data for GLP-1 pill Foundayo",
-      "desc": "First full-week prescription data showed soft uptake for Lilly's oral GLP-1 versus Novo Nordisk's Wegovy, pressuring shares and raising competitive concerns.",
+      "title": "Historic Fed dissent signals policy paralysis",
+      "desc": "The FOMC's 8-4 split decision—most dissents since 1992—reveals deep division over easing bias amid Middle East uncertainty and elevated inflation, clouding rate-cut path.",
+      "asset": "macro"
+    },
+    {
+      "type": "bearish",
+      "title": "Ethereum ETF outflows hit four consecutive days",
+      "desc": "Ethereum spot ETFs recorded $183.65 million in net outflows through Thursday, signaling fading institutional appetite despite Bitcoin ETF stabilization.",
+      "asset": "crypto"
+    },
+    {
+      "type": "bearish",
+      "title": "Roblox slashes full-year guidance on safety measures",
+      "desc": "Roblox stock plunged 24% premarket after cutting 2026 bookings forecast by 14-18 percentage points due to mandatory age verification throttling user growth.",
       "asset": "stocks"
     }
   ],
   "tickers": [
     {
       "symbol": "SPY",
-      "price": "709.89",
-      "change_pct": "+0.82"
+      "price": "723.50",
+      "change_pct": "+0.54"
     },
     {
       "symbol": "QQQ",
-      "price": "663.88",
-      "change_pct": "+1.91"
+      "price": "674.78",
+      "change_pct": "+1.05"
     },
     {
       "symbol": "BTC",
-      "price": "78004.97",
-      "change_pct": "+0.63"
+      "price": "77200",
+      "change_pct": "+1.88"
     },
     {
       "symbol": "ETH",
-      "price": "2330.56",
-      "change_pct": "+0.59"
+      "price": "2295",
+      "change_pct": "+1.31"
     },
     {
       "symbol": "GOLD",
-      "price": "4707.00",
-      "change_pct": "+1.00"
+      "price": "3280",
+      "change_pct": "-0.20"
     },
     {
       "symbol": "OIL",
-      "price": "97.60",
-      "change_pct": "-2.40"
+      "price": "102.50",
+      "change_pct": "-2.00"
     },
     {
       "symbol": "DXY",
-      "price": "103.50",
-      "change_pct": "+0.30"
+      "price": "99.80",
+      "change_pct": "-0.15"
     }
   ],
-  "verdict": "Risk-on flows continue as peace talks offset inflation concerns and Powell's April 29 hold sets stage for post-FOMC earnings volatility from mega-cap tech.",
+  "verdict": "Risk-on momentum remains intact as equity markets look past Fed paralysis and Middle East risks, but fragile peace hopes and stretched valuations warrant caution into next week's ISM and payrolls data.",
   "sentiment": "bullish",
   "sources": [
-    "https://www.cnbc.com/2026/04/23/stock-market-today-live-updates.html",
-    "https://www.cnbc.com/2026/04/24/amd-shares-soar-on-no-company-news-heres-what-has-investors-so-excited.html",
-    "https://www.coindesk.com/markets/2026/04/25/blackrock-s-bitcoin-etf-just-hit-a-massive-milestone-that-proves-crypto-is-now-a-mainstream-bet",
-    "https://goldsilver.com/industry-news/goldsilver-news/gold-price-today-what-to-watch-before-april-29-fomc/",
-    "https://www.factset.com/earningsinsight",
-    "https://blog.kraken.com/economic-brief/april-22-2026"
+    "https://www.cnbc.com/2026/04/29/fed-meeting-today-live-updates-warsh-powell.html",
+    "https://www.thestreet.com/latest-news/stock-market-today-may-1-2026-updates",
+    "https://www.fool.com/investing/2026/05/01/stock-market-today-live-coverage/",
+    "https://www.coindesk.com/",
+    "https://www.fxstreet.com/cryptocurrencies/news/crypto-today-bitcoin-leads-recovery-while-ethereum-and-xrp-try-to-shake-off-the-bearish-pressure-202605011154",
+    "https://www.cnbc.com/2026/04/30/apple-aapl-q2-2026-earnings-report.html"
   ],
   "fear_greed": {
     "stocks": {
-      "value": 66,
+      "value": 67,
       "label": "Greed",
-      "previous_close": 66,
-      "updated": "2026-04-24T23:59:49+00:00"
+      "previous_close": 67,
+      "updated": "2026-05-01T17:54:07+00:00"
     },
     "crypto": {
-      "value": 33,
+      "value": 26,
       "label": "Fear",
-      "updated": "2026-04-26T00:00:00.000Z"
+      "updated": "2026-05-01T00:00:00.000Z"
     }
   },
-  "generated_at": "2026-04-26T17:40:31.224Z",
+  "generated_at": "2026-05-01T17:59:34.986Z",
   "model": "claude-sonnet-4-5-20250929"
 }
