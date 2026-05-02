@@ -1,84 +1,83 @@
 {
-  "summary": "Markets closed out Friday with fresh all-time highs as the S&P 500 rose 0.29% to 7,230 and the Nasdaq surged 0.89% to 25,114, capping their best month since 2020. The Fed held rates at 3.5%-3.75% on April 29 amid a dramatic 8-4 split vote, with four dissents reflecting deep internal conflict over inflation risks and easing bias. Powell announced he will stay on as a board governor after his chair term ends May 15, while Kevin Warsh's nomination cleared committee. Energy remains the dominant macro risk as Brent crude hit $111 and WTI reached $105, with oil up 12% for the week on Trump's vow to maintain the Iran blockade. On the crypto front, Bitcoin traded near $77,000 with April spot ETF inflows of $2.44 billion marking the strongest month since October 2025. Whale wallets accumulated even as the Fear & Greed Index sat at 26, while negative funding rates suggest institutional hedging rather than bearish sentiment. Magnificent Seven earnings drove tech leadership, with Apple jumping 3% on strong iPhone sales and upbeat guidance, while Q1 S&P 500 earnings growth surged 31% year-over-year, beating estimates by 23%. The combination of resilient earnings, record AI capex, and hopes for Iran ceasefire progress has propelled equities despite elevated oil and Fed hawkishness. Rate cuts remain off the table until 2027, yet markets are pricing in a soft landing with equity allocations trumping macro caution.",
+  "summary": "Markets pushed to fresh all-time highs Friday as the S&P 500 and Nasdaq capped their best month since the start of the COVID pandemic in 2020, driven by Apple's earnings beat and renewed Iran peace talk hopes. The rally comes on the heels of Wednesday's dramatic Fed meeting, where Chair Powell's final session saw a historic 8-4 split vote to hold rates steady at 3.5%-3.75%, with four dissents marking the highest since 1992. Powell confirmed he will remain as a Fed governor despite his chairmanship ending May 15, while Kevin Warsh awaits Senate confirmation. Mega-cap tech earnings delivered mixed results: Alphabet surged 7% on a clean beat-and-raise, Apple jumped 3.4% on strong iPhone sales and China performance, while Microsoft and Meta stumbled on AI spending concerns. Oil prices eased on Iran proposal reports, while Bitcoin held above $78,000 as spot ETF inflows reversed three days of outflows.",
   "signals": [
     {
       "type": "bearish",
-      "title": "Fed holds rates with unprecedented 4-dissent vote, signals no cuts until 2027",
-      "desc": "The FOMC kept rates at 3.5%-3.75% in an 8-4 decision on April 29, the most dissents since 1992, as three members opposed easing bias language and inflation remains elevated from Middle East energy shocks—markets now price no cuts until late 2027.",
+      "title": "Historic Fed dissent signals policy rift as Warsh confirmation looms",
+      "desc": "Four FOMC members dissented in the April 29 decision—the most since 1992—with three opposing the easing bias amid elevated inflation from the Iran war, signaling potential tightening under Warsh.",
       "asset": "macro"
     },
     {
       "type": "bullish",
-      "title": "S&P 500 and Nasdaq hit record highs on strong Q1 earnings surge",
-      "desc": "The S&P 500 rose to 7,230 and Nasdaq to 25,114 on May 1 as 80% of reporting companies beat EPS estimates with 31% year-over-year growth, led by tech, financials, and communication services—fueling optimism despite valuation concerns.",
+      "title": "Apple earnings beat drives Nasdaq to record close above 25,000",
+      "desc": "Apple reported Q2 EPS of $2.01 vs. $1.95 est., with strong iPhone sales and China growth, announcing a $100 billion buyback; stock jumped 3.4% and lifted the Nasdaq 0.89% to a new high of 25,114.",
       "asset": "stocks"
     },
     {
-      "type": "bearish",
-      "title": "Oil surges 12% for week as Trump vows to maintain Iran blockade",
-      "desc": "Brent crude hit $111 and WTI reached $105 on May 1 as President Trump confirmed the U.S. naval blockade on Iranian ports will continue, keeping the Strait of Hormuz largely closed and threatening to push inflation higher if the standoff persists.",
-      "asset": "commodities"
-    },
-    {
       "type": "bullish",
-      "title": "Bitcoin ETF inflows hit $2.44B in April, strongest since October 2025",
-      "desc": "Spot Bitcoin ETFs recorded $2.44 billion in net inflows during April with BlackRock's IBIT capturing 70%, while BTC traded near $77,000 and whale wallets holding 1,000+ BTC increased by 142 addresses over six months despite Fear & Greed at 26.",
+      "title": "Bitcoin spot ETF inflows return after three-day selloff",
+      "desc": "U.S. spot Bitcoin ETFs recorded $4.5 million in net inflows on May 1 after nearly $500 million in outflows over three days, as BTC held above $78,000 despite macro uncertainty.",
       "asset": "crypto"
     },
     {
-      "type": "bullish",
-      "title": "Apple beats estimates, jumps 3% on strong iPhone demand and China momentum",
-      "desc": "Apple posted fiscal Q2 EPS of $2.01 vs. $1.95 estimate and revenue beat on May 1, with robust iPhone sales and upbeat current-quarter guidance overshadowing a revenue miss—shares rallied over 3% and powered the Nasdaq to a fresh record.",
+      "type": "bearish",
+      "title": "Oil surges to 4-year high as Trump vows blockade will stay",
+      "desc": "Brent crude hit $119.50—highest since June 2022—as President Trump confirmed the U.S. naval blockade of Iranian ports remains, pressuring airline and energy-sensitive sectors despite diplomatic signals.",
+      "asset": "commodities"
+    },
+    {
+      "type": "mixed",
+      "title": "Mag 7 earnings reveal AI capex scrutiny intensifying",
+      "desc": "Microsoft fell 5.7% and Meta stumbled on ballooning AI spending plans approaching $645 billion sector-wide in 2026, while Alphabet's monetization clarity drove a 7% rally, splitting investor sentiment on tech.",
       "asset": "stocks"
     }
   ],
   "tickers": [
     {
       "symbol": "SPY",
-      "price": "723.01",
+      "price": "720.12",
       "change_pct": "+0.29"
     },
     {
       "symbol": "QQQ",
-      "price": "673.88",
+      "price": "674.78",
       "change_pct": "+0.89"
     },
     {
       "symbol": "BTC",
-      "price": "76688",
-      "change_pct": "+0.58"
+      "price": "78244.41",
+      "change_pct": "+2.50"
     },
     {
       "symbol": "ETH",
-      "price": "2300",
-      "change_pct": "+0.98"
+      "price": "2295.40",
+      "change_pct": "+1.60"
     },
     {
       "symbol": "GOLD",
-      "price": "2340",
-      "change_pct": "+0.20"
+      "price": "4644.50",
+      "change_pct": "+0.32"
     },
     {
       "symbol": "OIL",
-      "price": "105.00",
-      "change_pct": "+12.00"
+      "price": "101.94",
+      "change_pct": "-2.98"
     },
     {
       "symbol": "DXY",
-      "price": "99.50",
-      "change_pct": "-0.15"
+      "price": "99.80",
+      "change_pct": "+0.15"
     }
   ],
-  "verdict": "Equities are pricing in a soft landing with record earnings and AI spending offsetting Fed hawkishness and oil shock risks, but stretched valuations and geopolitical uncertainty leave little margin for error.",
+  "verdict": "Equities and crypto remain resilient at record highs, but Fed policy discord, oil-driven inflation risk, and AI spending fatigue present credible pullback catalysts into next week's jobs data.",
   "sentiment": "mixed",
   "sources": [
     "https://www.cnbc.com/2026/04/29/fed-meeting-today-live-updates-warsh-powell.html",
     "https://www.cnbc.com/2026/04/30/stock-market-today-live-updates.html",
     "https://finance.yahoo.com/markets/stocks/live/stock-market-today-friday-may-1-records-apple-iran-231056146.html",
-    "https://www.spotedcrypto.com/bitcoin-news-today-may-2026/",
-    "https://247wallst.com/investing/2026/05/01/bitcoin-btc-price-prediction-for-may/",
+    "https://www.fool.com/coverage/stock-market-today/2026/05/01/crypto-markets-today-may-1-bitcoin-holds-above-usd78-000-as-tech-stocks-set-new-highs/",
     "https://www.schwab.com/learn/story/stock-market-update-open",
-    "https://www.nbcnews.com/business/markets/big-tech-ai-earnings-alphabet-meta-amazon-microsoft-rcna342796"
+    "https://tradingeconomics.com/united-states/stock-market"
   ],
   "fear_greed": {
     "stocks": {
@@ -93,6 +92,6 @@
       "updated": "2026-05-02T00:00:00.000Z"
     }
   },
-  "generated_at": "2026-05-02T10:59:04.413Z",
+  "generated_at": "2026-05-02T17:45:05.495Z",
   "model": "claude-sonnet-4-5-20250929"
 }
