@@ -1,83 +1,83 @@
 {
-  "summary": "Markets pushed to fresh all-time highs Friday as the S&P 500 and Nasdaq capped their best month since the start of the COVID pandemic in 2020, driven by Apple's earnings beat and renewed Iran peace talk hopes. The rally comes on the heels of Wednesday's dramatic Fed meeting, where Chair Powell's final session saw a historic 8-4 split vote to hold rates steady at 3.5%-3.75%, with four dissents marking the highest since 1992. Powell confirmed he will remain as a Fed governor despite his chairmanship ending May 15, while Kevin Warsh awaits Senate confirmation. Mega-cap tech earnings delivered mixed results: Alphabet surged 7% on a clean beat-and-raise, Apple jumped 3.4% on strong iPhone sales and China performance, while Microsoft and Meta stumbled on AI spending concerns. Oil prices eased on Iran proposal reports, while Bitcoin held above $78,000 as spot ETF inflows reversed three days of outflows.",
+  "summary": "<cite index=\"3-14,7-1,7-11\">The Federal Reserve held rates steady at 3.5%-3.75% on April 29 in Chair Powell's final meeting before Kevin Warsh's anticipated confirmation, but the decision exposed rare internal fractures with four dissents—the most since 1992. Powell announced he will remain as a Fed governor beyond his May 15 chairmanship end date, citing ongoing legal pressures.</cite> <cite index=\"11-12,11-17,12-4\">Equities surged regardless, with the S&P 500 and Nasdaq hitting all-time highs on May 1 as Apple beat earnings on strong iPhone 17 demand and Iran peace hopes drove oil lower.</cite> <cite index=\"36-8,36-10,36-22\">Mega-cap tech earnings delivered a split verdict: Alphabet rallied 10% on cloud strength and raised capex to $190 billion, while Meta plunged 9% after hiking AI spending guidance to $125-145 billion, fueling investor anxiety over returns on the industry's $650 billion collective AI buildout.</cite> <cite index=\"22-1,29-5,53-9\">Bitcoin held above $78,000 for the first time since February, supported by a reversal in spot ETF flows after three days of outflows, though crypto remains sensitive to macro crosscurrents.</cite>",
   "signals": [
     {
       "type": "bearish",
-      "title": "Historic Fed dissent signals policy rift as Warsh confirmation looms",
-      "desc": "Four FOMC members dissented in the April 29 decision—the most since 1992—with three opposing the easing bias amid elevated inflation from the Iran war, signaling potential tightening under Warsh.",
+      "title": "Fed signals hawkish hold with historic four-dissenter split",
+      "desc": "<cite index=\"3-8,5-28,10-14\">Four FOMC members dissented—one favoring a cut, three opposing the easing bias in the statement—signaling deep division as elevated inflation tied to Middle East energy prices keeps rate cuts on hold through at least mid-2026.</cite>",
       "asset": "macro"
     },
     {
       "type": "bullish",
-      "title": "Apple earnings beat drives Nasdaq to record close above 25,000",
-      "desc": "Apple reported Q2 EPS of $2.01 vs. $1.95 est., with strong iPhone sales and China growth, announcing a $100 billion buyback; stock jumped 3.4% and lifted the Nasdaq 0.89% to a new high of 25,114.",
+      "title": "Apple crushes earnings on iPhone 17 'extraordinary' demand",
+      "desc": "<cite index=\"11-17,12-4,12-30\">Apple beat Q2 estimates with gross margin of 49.3% (vs. 48.4% consensus), announced a new buyback, and provided upbeat guidance despite iPhone sales slightly missing, driving shares up 3%+ and pushing Nasdaq to records.</cite>",
+      "asset": "stocks"
+    },
+    {
+      "type": "bearish",
+      "title": "Meta craters 9% on $145B AI capex blowout, user growth miss",
+      "desc": "<cite index=\"14-25,36-12,36-22\">Meta raised full-year 2026 capex guidance to $125-145 billion while user growth disappointed, triggering concerns that AI spending is outpacing revenue generation and eroding investor confidence in return on investment.</cite>",
       "asset": "stocks"
     },
     {
       "type": "bullish",
-      "title": "Bitcoin spot ETF inflows return after three-day selloff",
-      "desc": "U.S. spot Bitcoin ETFs recorded $4.5 million in net inflows on May 1 after nearly $500 million in outflows over three days, as BTC held above $78,000 despite macro uncertainty.",
+      "title": "Bitcoin reclaims $78K on ETF inflow reversal, exchange reserve lows",
+      "desc": "<cite index=\"29-7,29-8,26-22,26-24\">Spot Bitcoin ETFs recorded $4.5M net inflows after three days of losses, while April saw strongest monthly inflows since October 2025 and exchange reserves hit multi-year lows, signaling long-term holder conviction despite macro headwinds.</cite>",
       "asset": "crypto"
     },
     {
-      "type": "bearish",
-      "title": "Oil surges to 4-year high as Trump vows blockade will stay",
-      "desc": "Brent crude hit $119.50—highest since June 2022—as President Trump confirmed the U.S. naval blockade of Iranian ports remains, pressuring airline and energy-sensitive sectors despite diplomatic signals.",
+      "type": "neutral",
+      "title": "Iran peace hopes drive oil retreat, but geopolitical risk persists",
+      "desc": "<cite index=\"12-7,13-14,25-18\">Oil prices fell after reports Iran sent a new proposal through Pakistani mediators, though Trump maintains the naval blockade will stay until the Strait of Hormuz reopens, leaving energy-driven inflation risks elevated.</cite>",
       "asset": "commodities"
-    },
-    {
-      "type": "mixed",
-      "title": "Mag 7 earnings reveal AI capex scrutiny intensifying",
-      "desc": "Microsoft fell 5.7% and Meta stumbled on ballooning AI spending plans approaching $645 billion sector-wide in 2026, while Alphabet's monetization clarity drove a 7% rally, splitting investor sentiment on tech.",
-      "asset": "stocks"
     }
   ],
   "tickers": [
     {
       "symbol": "SPY",
-      "price": "720.12",
+      "price": "723.01",
       "change_pct": "+0.29"
     },
     {
       "symbol": "QQQ",
-      "price": "674.78",
-      "change_pct": "+0.89"
+      "price": "674.15",
+      "change_pct": "+0.96"
     },
     {
       "symbol": "BTC",
-      "price": "78244.41",
+      "price": "78281",
       "change_pct": "+2.50"
     },
     {
       "symbol": "ETH",
-      "price": "2295.40",
+      "price": "2296",
       "change_pct": "+1.60"
     },
     {
       "symbol": "GOLD",
-      "price": "4644.50",
-      "change_pct": "+0.32"
+      "price": "2340",
+      "change_pct": "+0.20"
     },
     {
       "symbol": "OIL",
-      "price": "101.94",
-      "change_pct": "-2.98"
+      "price": "114.50",
+      "change_pct": "-4.20"
     },
     {
       "symbol": "DXY",
-      "price": "99.80",
-      "change_pct": "+0.15"
+      "price": "101.85",
+      "change_pct": "-0.15"
     }
   ],
-  "verdict": "Equities and crypto remain resilient at record highs, but Fed policy discord, oil-driven inflation risk, and AI spending fatigue present credible pullback catalysts into next week's jobs data.",
+  "verdict": "Markets are pricing peak AI-capex anxiety while ignoring a hawkish Fed—tech leadership remains intact but vulnerable to any stumble in monetization narratives.",
   "sentiment": "mixed",
   "sources": [
-    "https://www.cnbc.com/2026/04/29/fed-meeting-today-live-updates-warsh-powell.html",
-    "https://www.cnbc.com/2026/04/30/stock-market-today-live-updates.html",
-    "https://finance.yahoo.com/markets/stocks/live/stock-market-today-friday-may-1-records-apple-iran-231056146.html",
-    "https://www.fool.com/coverage/stock-market-today/2026/05/01/crypto-markets-today-may-1-bitcoin-holds-above-usd78-000-as-tech-stocks-set-new-highs/",
-    "https://www.schwab.com/learn/story/stock-market-update-open",
-    "https://tradingeconomics.com/united-states/stock-market"
+    "https://www.cnbc.com/2026/04/29/stock-market-today-live-updates.html",
+    "https://www.coindesk.com/",
+    "https://www.cnbc.com/2026/05/01/stock-market-today-live-updates.html",
+    "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-may-1-2026-prices-moving-higher-this-morning-113211522.html",
+    "https://www.theblock.co/",
+    "https://www.cbsnews.com/news/federal-reserve-fomc-meeting-today-rate-decision-jerome-powell-kevin-warsh/"
   ],
   "fear_greed": {
     "stocks": {
@@ -87,11 +87,11 @@
       "updated": "2026-05-01T23:59:39+00:00"
     },
     "crypto": {
-      "value": 39,
-      "label": "Fear",
-      "updated": "2026-05-02T00:00:00.000Z"
+      "value": 47,
+      "label": "Neutral",
+      "updated": "2026-05-03T00:00:00.000Z"
     }
   },
-  "generated_at": "2026-05-02T17:45:05.495Z",
+  "generated_at": "2026-05-03T11:00:25.574Z",
   "model": "claude-sonnet-4-5-20250929"
 }
