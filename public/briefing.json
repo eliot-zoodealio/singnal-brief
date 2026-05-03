@@ -1,42 +1,42 @@
 {
-  "summary": "<cite index=\"3-14,7-1,7-11\">The Federal Reserve held rates steady at 3.5%-3.75% on April 29 in Chair Powell's final meeting before Kevin Warsh's anticipated confirmation, but the decision exposed rare internal fractures with four dissents—the most since 1992. Powell announced he will remain as a Fed governor beyond his May 15 chairmanship end date, citing ongoing legal pressures.</cite> <cite index=\"11-12,11-17,12-4\">Equities surged regardless, with the S&P 500 and Nasdaq hitting all-time highs on May 1 as Apple beat earnings on strong iPhone 17 demand and Iran peace hopes drove oil lower.</cite> <cite index=\"36-8,36-10,36-22\">Mega-cap tech earnings delivered a split verdict: Alphabet rallied 10% on cloud strength and raised capex to $190 billion, while Meta plunged 9% after hiking AI spending guidance to $125-145 billion, fueling investor anxiety over returns on the industry's $650 billion collective AI buildout.</cite> <cite index=\"22-1,29-5,53-9\">Bitcoin held above $78,000 for the first time since February, supported by a reversal in spot ETF flows after three days of outflows, though crypto remains sensitive to macro crosscurrents.</cite>",
+  "summary": "Markets consolidated Saturday's strong May 1 close, with the S&P 500 and Nasdaq both notching fresh all-time highs to cap April's best monthly gain since 2020—a 10% surge driven by Magnificent 7 earnings. The Federal Reserve's April 29 decision to hold rates at 3.50–3.75% came with the highest dissent count since 1992, as four officials split over language signaling future easing. Chair Powell, who announced he will stay on as a governor after his chairmanship ends May 15, warned that inflation remains elevated, citing a 21% spike in gasoline and ongoing Middle East tensions. Bitcoin ETFs posted $1.97 billion in April inflows, the strongest month of 2026, as BTC reclaimed $78,000 despite a late-week outflow streak. Oil cooled marginally below $104, offering brief relief, while investors await the CLARITY Act and May earnings from Palantir, AMD, and Disney.",
   "signals": [
     {
       "type": "bearish",
-      "title": "Fed signals hawkish hold with historic four-dissenter split",
-      "desc": "<cite index=\"3-8,5-28,10-14\">Four FOMC members dissented—one favoring a cut, three opposing the easing bias in the statement—signaling deep division as elevated inflation tied to Middle East energy prices keeps rate cuts on hold through at least mid-2026.</cite>",
+      "title": "Fed holds rates with historic 4-dissent split, flags sticky inflation",
+      "desc": "The FOMC held rates steady but recorded the most dissents since 1992, with Powell noting elevated inflation from energy and Middle East uncertainty—casting doubt on near-term cuts.",
       "asset": "macro"
     },
     {
       "type": "bullish",
-      "title": "Apple crushes earnings on iPhone 17 'extraordinary' demand",
-      "desc": "<cite index=\"11-17,12-4,12-30\">Apple beat Q2 estimates with gross margin of 49.3% (vs. 48.4% consensus), announced a new buyback, and provided upbeat guidance despite iPhone sales slightly missing, driving shares up 3%+ and pushing Nasdaq to records.</cite>",
+      "title": "Bitcoin ETFs log strongest monthly inflow of 2026 at $1.97B",
+      "desc": "U.S. spot Bitcoin ETFs pulled $1.97 billion in April, nearly double March's total, as BlackRock's IBIT dominated flows and BTC reclaimed the $78,000 level.",
+      "asset": "crypto"
+    },
+    {
+      "type": "bullish",
+      "title": "S&P 500 and Nasdaq hit records after 10% April rally on tech earnings",
+      "desc": "Both indexes closed May 1 at all-time highs following strong results from Apple, Alphabet, and Eli Lilly, marking the best monthly performance since April 2020.",
       "asset": "stocks"
     },
     {
       "type": "bearish",
-      "title": "Meta craters 9% on $145B AI capex blowout, user growth miss",
-      "desc": "<cite index=\"14-25,36-12,36-22\">Meta raised full-year 2026 capex guidance to $125-145 billion while user growth disappointed, triggering concerns that AI spending is outpacing revenue generation and eroding investor confidence in return on investment.</cite>",
+      "title": "Meta plunges 10% on raised capex guidance to $145B",
+      "desc": "Meta shares tumbled despite beating Q1 estimates, as the company hiked full-year AI spending guidance and user growth disappointed, stoking fears of low ROI.",
       "asset": "stocks"
     },
     {
-      "type": "bullish",
-      "title": "Bitcoin reclaims $78K on ETF inflow reversal, exchange reserve lows",
-      "desc": "<cite index=\"29-7,29-8,26-22,26-24\">Spot Bitcoin ETFs recorded $4.5M net inflows after three days of losses, while April saw strongest monthly inflows since October 2025 and exchange reserves hit multi-year lows, signaling long-term holder conviction despite macro headwinds.</cite>",
-      "asset": "crypto"
-    },
-    {
       "type": "neutral",
-      "title": "Iran peace hopes drive oil retreat, but geopolitical risk persists",
-      "desc": "<cite index=\"12-7,13-14,25-18\">Oil prices fell after reports Iran sent a new proposal through Pakistani mediators, though Trump maintains the naval blockade will stay until the Strait of Hormuz reopens, leaving energy-driven inflation risks elevated.</cite>",
+      "title": "Oil retreats from $119 peak as Iran talks remain stalled",
+      "desc": "Brent crude eased below $104 from a near four-year high after reports Iran submitted a new proposal, though Trump rejected reopening the Strait of Hormuz.",
       "asset": "commodities"
     }
   ],
   "tickers": [
     {
       "symbol": "SPY",
-      "price": "723.01",
-      "change_pct": "+0.29"
+      "price": "674.15",
+      "change_pct": "+0.96"
     },
     {
       "symbol": "QQQ",
@@ -45,13 +45,13 @@
     },
     {
       "symbol": "BTC",
-      "price": "78281",
-      "change_pct": "+2.50"
+      "price": "78600",
+      "change_pct": "+1.30"
     },
     {
       "symbol": "ETH",
-      "price": "2296",
-      "change_pct": "+1.60"
+      "price": "2300",
+      "change_pct": "+0.80"
     },
     {
       "symbol": "GOLD",
@@ -60,24 +60,24 @@
     },
     {
       "symbol": "OIL",
-      "price": "114.50",
-      "change_pct": "-4.20"
+      "price": "103.50",
+      "change_pct": "-1.20"
     },
     {
       "symbol": "DXY",
-      "price": "101.85",
-      "change_pct": "-0.15"
+      "price": "105.40",
+      "change_pct": "+0.10"
     }
   ],
-  "verdict": "Markets are pricing peak AI-capex anxiety while ignoring a hawkish Fed—tech leadership remains intact but vulnerable to any stumble in monetization narratives.",
+  "verdict": "Risk appetite is intact post-April's rally, but Fed hawkishness and oil volatility leave the path to new highs fragile until earnings and macro data clarify demand strength.",
   "sentiment": "mixed",
   "sources": [
-    "https://www.cnbc.com/2026/04/29/stock-market-today-live-updates.html",
-    "https://www.coindesk.com/",
-    "https://www.cnbc.com/2026/05/01/stock-market-today-live-updates.html",
-    "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-may-1-2026-prices-moving-higher-this-morning-113211522.html",
-    "https://www.theblock.co/",
-    "https://www.cbsnews.com/news/federal-reserve-fomc-meeting-today-rate-decision-jerome-powell-kevin-warsh/"
+    "https://www.cnbc.com/2026/04/29/fed-meeting-today-live-updates-warsh-powell.html",
+    "https://www.cbsnews.com/news/federal-reserve-fomc-meeting-today-rate-decision-jerome-powell-kevin-warsh/",
+    "https://www.cryptotimes.io/2026/05/01/crypto-market-today-btc-reclaims-77k-as-april-closes-strongest-etf-month-of-2026/",
+    "https://www.cnbc.com/2026/04/30/stock-market-today-live-updates.html",
+    "https://www.investing.com/news/cryptocurrency-news/bitcoin-trades-above-78000-as-etf-inflows-cement-strongest-month-in-a-year-4654748",
+    "https://ts2.tech/en/stock-market-today-03-05-2026/"
   ],
   "fear_greed": {
     "stocks": {
@@ -92,6 +92,6 @@
       "updated": "2026-05-03T00:00:00.000Z"
     }
   },
-  "generated_at": "2026-05-03T11:00:25.574Z",
+  "generated_at": "2026-05-03T17:49:15.616Z",
   "model": "claude-sonnet-4-5-20250929"
 }
