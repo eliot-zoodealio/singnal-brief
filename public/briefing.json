@@ -1,97 +1,97 @@
 {
-  "summary": "Markets consolidated Saturday's strong May 1 close, with the S&P 500 and Nasdaq both notching fresh all-time highs to cap April's best monthly gain since 2020—a 10% surge driven by Magnificent 7 earnings. The Federal Reserve's April 29 decision to hold rates at 3.50–3.75% came with the highest dissent count since 1992, as four officials split over language signaling future easing. Chair Powell, who announced he will stay on as a governor after his chairmanship ends May 15, warned that inflation remains elevated, citing a 21% spike in gasoline and ongoing Middle East tensions. Bitcoin ETFs posted $1.97 billion in April inflows, the strongest month of 2026, as BTC reclaimed $78,000 despite a late-week outflow streak. Oil cooled marginally below $104, offering brief relief, while investors await the CLARITY Act and May earnings from Palantir, AMD, and Disney.",
+  "summary": "U.S. equities extended their rally into record territory Friday as the S&P 500 and Nasdaq posted their sixth consecutive weekly gain, propelled by better-than-expected April jobs data and resilient earnings despite persistent geopolitical tensions. The economy added 115,000 jobs in April, nearly doubling the 65,000 consensus and unemployment held steady at 4.3%, signaling economic resilience even as energy prices remain elevated due to the Iran conflict. AMD led the earnings charge with a massive revenue beat that sent shares up 20% for the week, crossing the $700 billion market cap threshold as AI infrastructure demand accelerates. Meanwhile, crypto markets held steady above key support levels with Bitcoin trading around $80,000 and Ethereum near $2,300, though a brief AWS outage disrupted Coinbase and FanDuel trading Thursday night. The Fed's late-April decision to hold rates at 3.5-3.75% continues to frame market expectations, with Chair Powell planning to remain as a Fed governor even after Kevin Warsh takes over the chairmanship on May 15. Oil volatility persists with WTI near $95 and Brent above $100 as strikes between the U.S. and Iran undermined ceasefire hopes, keeping inflation concerns front and center.",
   "signals": [
     {
-      "type": "bearish",
-      "title": "Fed holds rates with historic 4-dissent split, flags sticky inflation",
-      "desc": "The FOMC held rates steady but recorded the most dissents since 1992, with Powell noting elevated inflation from energy and Middle East uncertainty—casting doubt on near-term cuts.",
-      "asset": "macro"
+      "type": "bullish",
+      "title": "April jobs report doubles expectations at 115K additions",
+      "desc": "U.S. payrolls beat consensus by nearly 2x with unemployment steady at 4.3%, easing recession fears and supporting equity rally to records.",
+      "asset": "stocks"
     },
     {
       "type": "bullish",
-      "title": "Bitcoin ETFs log strongest monthly inflow of 2026 at $1.97B",
-      "desc": "U.S. spot Bitcoin ETFs pulled $1.97 billion in April, nearly double March's total, as BlackRock's IBIT dominated flows and BTC reclaimed the $78,000 level.",
-      "asset": "crypto"
-    },
-    {
-      "type": "bullish",
-      "title": "S&P 500 and Nasdaq hit records after 10% April rally on tech earnings",
-      "desc": "Both indexes closed May 1 at all-time highs following strong results from Apple, Alphabet, and Eli Lilly, marking the best monthly performance since April 2020.",
+      "title": "AMD crushes Q1 with $10.25B revenue, shares surge 20% weekly",
+      "desc": "Chipmaker's AI-driven data center revenue up 57% YoY, market cap crosses $700B as demand for accelerators and CPUs accelerates.",
       "asset": "stocks"
     },
     {
       "type": "bearish",
-      "title": "Meta plunges 10% on raised capex guidance to $145B",
-      "desc": "Meta shares tumbled despite beating Q1 estimates, as the company hiked full-year AI spending guidance and user growth disappointed, stoking fears of low ROI.",
-      "asset": "stocks"
+      "title": "Oil spikes above $100 as U.S.-Iran strikes violate fragile ceasefire",
+      "desc": "Brent crude hit $119 intraday Thursday before settling near $101, reigniting stagflation concerns and weighing on consumer sentiment.",
+      "asset": "commodities"
     },
     {
       "type": "neutral",
-      "title": "Oil retreats from $119 peak as Iran talks remain stalled",
-      "desc": "Brent crude eased below $104 from a near four-year high after reports Iran submitted a new proposal, though Trump rejected reopening the Strait of Hormuz.",
-      "asset": "commodities"
+      "title": "Fed holds rates at 3.5-3.75% amid 8-4 split vote and leadership transition",
+      "desc": "Powell stays as governor post-chairmanship; most dissents since 1992 signal deep uncertainty over inflation vs. growth trade-off.",
+      "asset": "macro"
+    },
+    {
+      "type": "neutral",
+      "title": "Bitcoin holds $80K as AWS outage disrupts Coinbase trading overnight",
+      "desc": "Thermal issue at Northern Virginia data center halted crypto exchange services for hours; BTC and ETH steady despite infrastructure hiccup.",
+      "asset": "crypto"
     }
   ],
   "tickers": [
     {
       "symbol": "SPY",
-      "price": "674.15",
-      "change_pct": "+0.96"
+      "price": "737.76",
+      "change_pct": "+0.84"
     },
     {
       "symbol": "QQQ",
-      "price": "674.15",
-      "change_pct": "+0.96"
+      "price": "711.23",
+      "change_pct": "+2.11"
     },
     {
       "symbol": "BTC",
-      "price": "78600",
-      "change_pct": "+1.30"
-    },
-    {
-      "symbol": "ETH",
-      "price": "2300",
+      "price": "80355",
       "change_pct": "+0.80"
     },
     {
+      "symbol": "ETH",
+      "price": "2307",
+      "change_pct": "+0.77"
+    },
+    {
       "symbol": "GOLD",
-      "price": "2340",
-      "change_pct": "+0.20"
+      "price": "4754",
+      "change_pct": "+1.28"
     },
     {
       "symbol": "OIL",
-      "price": "103.50",
-      "change_pct": "-1.20"
+      "price": "95.82",
+      "change_pct": "+1.07"
     },
     {
       "symbol": "DXY",
-      "price": "105.40",
-      "change_pct": "+0.10"
+      "price": "101.44",
+      "change_pct": "+1.38"
     }
   ],
-  "verdict": "Risk appetite is intact post-April's rally, but Fed hawkishness and oil volatility leave the path to new highs fragile until earnings and macro data clarify demand strength.",
-  "sentiment": "mixed",
+  "verdict": "Risk-on momentum persists on jobs strength and AI earnings, but oil above $100 and Fed uncertainty cloud the path forward.",
+  "sentiment": "bullish",
   "sources": [
-    "https://www.cnbc.com/2026/04/29/fed-meeting-today-live-updates-warsh-powell.html",
+    "https://www.cnbc.com/2026/05/07/stock-market-today-live-updates.html",
+    "https://www.thestreet.com/latest-news/stock-market-today-may-8-2026-updates",
+    "https://ir.amd.com/news-events/press-releases/detail/1284/amd-reports-first-quarter-2026-financial-results",
     "https://www.cbsnews.com/news/federal-reserve-fomc-meeting-today-rate-decision-jerome-powell-kevin-warsh/",
-    "https://www.cryptotimes.io/2026/05/01/crypto-market-today-btc-reclaims-77k-as-april-closes-strongest-etf-month-of-2026/",
-    "https://www.cnbc.com/2026/04/30/stock-market-today-live-updates.html",
-    "https://www.investing.com/news/cryptocurrency-news/bitcoin-trades-above-78000-as-etf-inflows-cement-strongest-month-in-a-year-4654748",
-    "https://ts2.tech/en/stock-market-today-03-05-2026/"
+    "https://www.coindesk.com/tag/ethereum",
+    "https://finance.yahoo.com/economy/policy/live/fed-meeting-live-updates-federal-reserve-holds-interest-rates-steady-in-powells-final-meeting-as-chair-111906007.html"
   ],
   "fear_greed": {
     "stocks": {
       "value": 67,
       "label": "Greed",
-      "previous_close": 67,
-      "updated": "2026-05-01T23:59:39+00:00"
+      "previous_close": 68,
+      "updated": "2026-05-08T23:59:55+00:00"
     },
     "crypto": {
-      "value": 47,
-      "label": "Neutral",
-      "updated": "2026-05-03T00:00:00.000Z"
+      "value": 38,
+      "label": "Fear",
+      "updated": "2026-05-09T00:00:00.000Z"
     }
   },
-  "generated_at": "2026-05-03T17:49:15.616Z",
+  "generated_at": "2026-05-09T17:52:49.145Z",
   "model": "claude-sonnet-4-5-20250929"
 }
