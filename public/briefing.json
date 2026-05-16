@@ -1,97 +1,96 @@
 {
-  "summary": "Markets extended their six-week rally on Friday, with the Nasdaq hitting fresh records near 26,247 as semiconductor stocks surged over 60% year-to-date on AI infrastructure spending. The S&P 500 closed at 7,399, up 0.84%, marking its longest winning streak since 2024. Bitcoin ETFs pulled in over $1 billion this week—the first billion-dollar week since January—pushing BTC above $81,000 as institutional demand accelerates. The April jobs report beat expectations with 115,000 additions versus 65,000 forecast, signaling labor market resilience despite Iran conflict uncertainties. The Fed held rates steady at its April 29 meeting in an unprecedented 8-4 split decision, with Powell announcing he will remain as a governor after his chairmanship ends May 15 when Kevin Warsh takes over. March CPI came in hot at 3.3% year-over-year, driven by a 21.2% spike in gasoline from Middle East tensions. Mega-cap earnings season delivered beats from Apple, Amazon, Alphabet, and AMD, with Q1 S&P 500 earnings up 21.2% on strong AI capex and cloud growth, though oil above $95 and sticky core inflation at 2.6% keep pressure on margins.",
+  "summary": "U.S. equities closed sharply lower on Friday as stocks retreated from record highs set earlier in the week. The S&P 500 fell 1.24% to 7,408.50, the Nasdaq dropped 1.54% to 26,225.14, and the Dow lost 537 points to 49,526.17. The selloff was triggered by rising bond yields—the 30-year Treasury hit 5.114% and the 10-year reached 4.54%, both 12-month highs—as markets priced a 44% chance of a Fed rate hike by December. President Trump's two-day summit with Xi Jinping in Beijing ended without major breakthroughs on Iran peace efforts, keeping oil above $109 per barrel and stoking persistent inflation fears. Meanwhile, crypto markets gave back gains despite the Senate Banking Committee advancing the CLARITY Act 15-9 on Thursday. Bitcoin slipped below $80,000 to $78,000 levels, Ethereum fell to $2,250, and over $500 million in leveraged long positions were liquidated as bond yields spiked and risk appetite cooled.",
   "signals": [
     {
-      "type": "bullish",
-      "title": "Semiconductor rally extends as Philadelphia SOX Index surges 60% YTD on AI infrastructure buildout",
-      "desc": "AMD crossed $700 billion market cap after beating Q1 earnings, while Micron and NVIDIA post strong gains as hyperscaler capex accelerates, fueling chip orders despite geopolitical risks.",
-      "asset": "stocks"
-    },
-    {
-      "type": "bullish",
-      "title": "Bitcoin ETFs record first $1 billion weekly inflow since January; BlackRock's IBIT dominates",
-      "desc": "Spot Bitcoin ETFs pulled $1.63 billion in the first week of May, with $2.44 billion in April—the strongest monthly figure since October 2025—signaling renewed institutional appetite.",
-      "asset": "crypto"
-    },
-    {
-      "type": "neutral",
-      "title": "Fed holds rates at 3.5-3.75% in historic 8-4 split decision as Powell's tenure ends May 15",
-      "desc": "Four FOMC members dissented in April meeting; committee forecasts one rate cut in December 2026 amid uncertainty from Iran conflict and elevated energy-driven inflation at 3.3%.",
-      "asset": "macro"
-    },
-    {
-      "type": "bullish",
-      "title": "April jobs report beats with 115,000 additions vs 65,000 expected; unemployment holds at 4.3%",
-      "desc": "Labor market shows resilience despite zero private-sector job creation over six months per Powell; wage growth of 3.5% continues to outpace inflation, supporting consumer spending.",
+      "type": "bearish",
+      "title": "Bond yields surge to 12-month highs, Fed hike odds jump to 44%",
+      "desc": "The 30-year Treasury yield hit 5.114% and the 10-year reached 4.54%, pulling capital from equities and crypto as markets reprice Fed policy toward tightening by December.",
       "asset": "macro"
     },
     {
       "type": "bearish",
-      "title": "Michael Burry warns AI rally resembles dot-com bubble final stages as valuations stretch",
-      "desc": "Burry compared semiconductor index trajectory to 1999-2000 run-up; March CPI surged 0.9% monthly with core at 2.6%, keeping Fed on hold and pressuring rate-cut expectations into 2027.",
+      "title": "Trump-Xi summit ends without Iran peace progress, oil tops $109",
+      "desc": "Two-day Beijing talks concluded with business deals but no breakthrough on Iran war, with Brent crude rising over 2% to $109 and fueling persistent inflation concerns.",
+      "asset": "commodities"
+    },
+    {
+      "type": "bearish",
+      "title": "Crypto liquidation cascade wipes $500M in leveraged longs",
+      "desc": "Bitcoin fell below $80,000 and Ethereum slipped to $2,250 despite CLARITY Act passage, as over $500 million in long positions were flushed amid bond selloff and risk-off sentiment.",
+      "asset": "crypto"
+    },
+    {
+      "type": "neutral",
+      "title": "Senate advances CLARITY Act 15-9, but market rally fades in hours",
+      "desc": "Bipartisan passage of the Digital Asset Market Clarity Act initially sparked a crypto rally, but gains unwound within four hours as macro headwinds overwhelmed regulatory optimism.",
+      "asset": "crypto"
+    },
+    {
+      "type": "bullish",
+      "title": "Cisco surges 15% on AI networking boom, cutting 4,000 jobs",
+      "desc": "Cisco stock popped on surging AI data center orders and a networking 'supercycle,' offsetting tech sector weakness with strong demand visibility.",
       "asset": "stocks"
     }
   ],
   "tickers": [
     {
       "symbol": "SPY",
-      "price": "739.89",
-      "change_pct": "+0.84"
+      "price": "740.85",
+      "change_pct": "-1.24"
     },
     {
       "symbol": "QQQ",
-      "price": "711.23",
-      "change_pct": "+1.71"
+      "price": "706.12",
+      "change_pct": "-1.54"
     },
     {
       "symbol": "BTC",
-      "price": "81394",
-      "change_pct": "+0.74"
+      "price": "78030",
+      "change_pct": "-2.50"
     },
     {
       "symbol": "ETH",
-      "price": "2305",
-      "change_pct": "+0.52"
+      "price": "2194",
+      "change_pct": "-2.73"
     },
     {
       "symbol": "GOLD",
-      "price": "4730.70",
-      "change_pct": "+0.42"
+      "price": "3205",
+      "change_pct": "-1.20"
     },
     {
       "symbol": "OIL",
-      "price": "95.42",
-      "change_pct": "+0.64"
+      "price": "109.00",
+      "change_pct": "+2.30"
     },
     {
       "symbol": "DXY",
-      "price": "101.25",
-      "change_pct": "-0.38"
+      "price": "102.45",
+      "change_pct": "+0.35"
     }
   ],
-  "verdict": "Tech and crypto lead risk-on rally as AI spending trumps inflation fears, but sticky CPI and Fed leadership transition cloud rate-cut timeline.",
-  "sentiment": "bullish",
+  "verdict": "Markets face a trifecta of headwinds—spiking yields, stalled Iran diplomacy, and fading crypto momentum—with bond vigilantes driving a sharp repricing of Fed dovishness.",
+  "sentiment": "bearish",
   "sources": [
-    "https://www.cnbc.com/2026/05/07/stock-market-today-live-updates.html",
-    "https://www.coindesk.com/markets/2026/05/04/the-bitcoin-etf-recovery-in-flows-is-real-it-is-just-not-complete-yet",
-    "https://www.cbsnews.com/news/federal-reserve-fomc-meeting-today-rate-decision-jerome-powell-kevin-warsh/",
-    "https://ts2.tech/en/stock-market-today-10-05-2026/",
-    "https://www.bls.gov/news.release/cpi.nr0.htm",
-    "https://finance.yahoo.com/markets/stocks/articles/beyond-mega-cap-tech-q1-234300748.html"
+    "https://www.cnbc.com/2026/05/14/stock-market-today-live-updates.html",
+    "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-sink-as-yields-jump-amid-inflation-jitters-224527705.html",
+    "https://coinmarketcap.com/currencies/ethereum/",
+    "https://247wallst.com/investing/2026/05/15/ripple-xrp-solana-sol-and-ethereum-eth-are-down-as-bitcoin-btc-slips-below-80k/",
+    "https://www.fool.com/investing/2026/05/15/wall-street-bids-adieu-jerome-powell-fomc-division/"
   ],
   "fear_greed": {
     "stocks": {
-      "value": 67,
+      "value": 63,
       "label": "Greed",
-      "previous_close": 68,
-      "updated": "2026-05-08T23:59:55+00:00"
+      "previous_close": 66,
+      "updated": "2026-05-15T23:59:54+00:00"
     },
     "crypto": {
-      "value": 47,
-      "label": "Neutral",
-      "updated": "2026-05-10T00:00:00.000Z"
+      "value": 31,
+      "label": "Fear",
+      "updated": "2026-05-16T00:00:00.000Z"
     }
   },
-  "generated_at": "2026-05-10T17:53:38.059Z",
+  "generated_at": "2026-05-16T17:56:18.430Z",
   "model": "claude-sonnet-4-5-20250929"
 }
