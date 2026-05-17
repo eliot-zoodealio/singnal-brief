@@ -1,82 +1,81 @@
 {
-  "summary": "U.S. equities closed sharply lower on Friday as stocks retreated from record highs set earlier in the week. The S&P 500 fell 1.24% to 7,408.50, the Nasdaq dropped 1.54% to 26,225.14, and the Dow lost 537 points to 49,526.17. The selloff was triggered by rising bond yields—the 30-year Treasury hit 5.114% and the 10-year reached 4.54%, both 12-month highs—as markets priced a 44% chance of a Fed rate hike by December. President Trump's two-day summit with Xi Jinping in Beijing ended without major breakthroughs on Iran peace efforts, keeping oil above $109 per barrel and stoking persistent inflation fears. Meanwhile, crypto markets gave back gains despite the Senate Banking Committee advancing the CLARITY Act 15-9 on Thursday. Bitcoin slipped below $80,000 to $78,000 levels, Ethereum fell to $2,250, and over $500 million in leveraged long positions were liquidated as bond yields spiked and risk appetite cooled.",
+  "summary": "Markets closed sharply lower on Friday as investors digested Powell's final day as Fed chair and rising inflation concerns. The S&P 500 shed 1.24% to 7,408.50, while the Nasdaq dropped 1.54% amid a tech selloff led by Intel, AMD, and Micron. Semiconductor stocks fell despite recent strength, as the two-day Trump-Xi summit ended without major policy breakthroughs, leaving traders disappointed. On May 15, Jerome Powell concluded his eight-year tenure as Fed chair after the FOMC held rates steady at 3.5-3.75%, with four dissenting votes marking the most divided decision since 1992. The statement cited Middle East turmoil as a key uncertainty driver, while elevated oil prices continue to fuel inflation fears. In crypto, Bitcoin slid below $79,000 as liquidations topped $500 million and ETF outflows snapped a six-week inflow streak. The Senate advanced the CLARITY Act, briefly lifting XRP 5%, though gains faded on broader risk-off sentiment.",
   "signals": [
     {
       "type": "bearish",
-      "title": "Bond yields surge to 12-month highs, Fed hike odds jump to 44%",
-      "desc": "The 30-year Treasury yield hit 5.114% and the 10-year reached 4.54%, pulling capital from equities and crypto as markets reprice Fed policy toward tightening by December.",
+      "title": "Fed Holds Rates, Divided FOMC Signals Uncertain Path Forward",
+      "desc": "Four Fed officials dissented in the most divided vote since 1992, with the FOMC holding rates at 3.5-3.75% and citing Middle East uncertainty as inflation risks mount.",
       "asset": "macro"
     },
     {
       "type": "bearish",
-      "title": "Trump-Xi summit ends without Iran peace progress, oil tops $109",
-      "desc": "Two-day Beijing talks concluded with business deals but no breakthrough on Iran war, with Brent crude rising over 2% to $109 and fueling persistent inflation concerns.",
-      "asset": "commodities"
+      "title": "Stock Selloff Extends as Trump-Xi Summit Disappoints",
+      "desc": "Markets fell over 1% Friday as the two-day Trump-Xi talks ended without breakthroughs, triggering profit-taking in tech stocks that had rallied sharply in prior sessions.",
+      "asset": "stocks"
     },
     {
       "type": "bearish",
-      "title": "Crypto liquidation cascade wipes $500M in leveraged longs",
-      "desc": "Bitcoin fell below $80,000 and Ethereum slipped to $2,250 despite CLARITY Act passage, as over $500 million in long positions were flushed amid bond selloff and risk-off sentiment.",
+      "title": "Bitcoin Liquidations Hit $500M as BTC Slides to $78K",
+      "desc": "Crypto longs suffered a liquidation cascade as Bitcoin fell below $79,000 and ETF outflows snapped a six-week inflow streak amid global bond selloff pressures.",
       "asset": "crypto"
     },
     {
-      "type": "neutral",
-      "title": "Senate advances CLARITY Act 15-9, but market rally fades in hours",
-      "desc": "Bipartisan passage of the Digital Asset Market Clarity Act initially sparked a crypto rally, but gains unwound within four hours as macro headwinds overwhelmed regulatory optimism.",
-      "asset": "crypto"
+      "type": "bearish",
+      "title": "Surging Oil Prices Threaten Markets Amid Iran War Escalation",
+      "desc": "Brent crude hit a four-year high near $119.50 as Middle East conflict intensifies, raising inflation concerns and weighing on equity valuations.",
+      "asset": "commodities"
     },
     {
       "type": "bullish",
-      "title": "Cisco surges 15% on AI networking boom, cutting 4,000 jobs",
-      "desc": "Cisco stock popped on surging AI data center orders and a networking 'supercycle,' offsetting tech sector weakness with strong demand visibility.",
+      "title": "Nvidia Earnings May 20 Could Drive Tech Rebound",
+      "desc": "Wall Street expects Nvidia to report 77% revenue growth to $78B for fiscal Q1, with strong AI demand potentially offering direction for tech stocks next week.",
       "asset": "stocks"
     }
   ],
   "tickers": [
     {
       "symbol": "SPY",
-      "price": "740.85",
-      "change_pct": "-1.24"
+      "price": "738.18",
+      "change_pct": "-0.15"
     },
     {
       "symbol": "QQQ",
-      "price": "706.12",
-      "change_pct": "-1.54"
+      "price": "707.24",
+      "change_pct": "-0.85"
     },
     {
       "symbol": "BTC",
-      "price": "78030",
-      "change_pct": "-2.50"
+      "price": "78085",
+      "change_pct": "+0.05"
     },
     {
       "symbol": "ETH",
-      "price": "2194",
-      "change_pct": "-2.73"
+      "price": "2185",
+      "change_pct": "-0.37"
     },
     {
       "symbol": "GOLD",
-      "price": "3205",
-      "change_pct": "-1.20"
+      "price": "4691",
+      "change_pct": "-0.33"
     },
     {
       "symbol": "OIL",
-      "price": "109.00",
-      "change_pct": "+2.30"
+      "price": "119.50",
+      "change_pct": "+7.00"
     },
     {
       "symbol": "DXY",
-      "price": "102.45",
-      "change_pct": "+0.35"
+      "price": "101.20",
+      "change_pct": "+0.20"
     }
   ],
-  "verdict": "Markets face a trifecta of headwinds—spiking yields, stalled Iran diplomacy, and fading crypto momentum—with bond vigilantes driving a sharp repricing of Fed dovishness.",
+  "verdict": "Risk-off sentiment dominates as Fed division, oil spike, and crypto outflows signal caution ahead of key Nvidia earnings next week.",
   "sentiment": "bearish",
   "sources": [
     "https://www.cnbc.com/2026/05/14/stock-market-today-live-updates.html",
-    "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-sink-as-yields-jump-amid-inflation-jitters-224527705.html",
-    "https://coinmarketcap.com/currencies/ethereum/",
-    "https://247wallst.com/investing/2026/05/15/ripple-xrp-solana-sol-and-ethereum-eth-are-down-as-bitcoin-btc-slips-below-80k/",
-    "https://www.fool.com/investing/2026/05/15/wall-street-bids-adieu-jerome-powell-fomc-division/"
+    "https://finance.yahoo.com/economy/policy/live/fed-meeting-live-updates-federal-reserve-holds-interest-rates-steady-in-powells-final-meeting-as-chair-111906007.html",
+    "https://www.coindesk.com/",
+    "https://www.fool.com/investing/2026/05/17/prediction-may-21-will-be-a-huge-day-for-the-stock/"
   ],
   "fear_greed": {
     "stocks": {
@@ -86,11 +85,11 @@
       "updated": "2026-05-15T23:59:54+00:00"
     },
     "crypto": {
-      "value": 31,
+      "value": 27,
       "label": "Fear",
-      "updated": "2026-05-16T00:00:00.000Z"
+      "updated": "2026-05-17T00:00:00.000Z"
     }
   },
-  "generated_at": "2026-05-16T17:56:18.430Z",
+  "generated_at": "2026-05-17T17:58:52.400Z",
   "model": "claude-sonnet-4-5-20250929"
 }
